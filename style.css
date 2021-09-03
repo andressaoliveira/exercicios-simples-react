@@ -1,0 +1,15 @@
+#lista01 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+}
+
+div {
+    padding-bottom: 50px;
+}
+
+#lista02 {
+    background-color: red;
+}
