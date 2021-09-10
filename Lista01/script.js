@@ -1,6 +1,10 @@
 function inserirValorMediaPonderada() {
-    const notaValor = parseInt(document.getElementById('nota').value);
-    const pesoValor = parseInt(document.getElementById('peso').value);
+    let notaNode = document.getElementById('nota');
+    let pesoNode = document.getElementById('peso');
+    const notaValor = parseInt(notaNode.value);
+    const pesoValor = parseInt(pesoNode.value);
+    notaNode.value = null;
+    pesoNode.value = null;
 
     const notasStr = localStorage.getItem('notas');
     const nota = {
@@ -14,6 +18,7 @@ function inserirValorMediaPonderada() {
     }
     notas.push(nota)
     localStorage.setItem('notas', JSON.stringify(notas));
+
 }
 
 function calcularMediaPonderada() {
@@ -29,6 +34,8 @@ function calcularMediaPonderada() {
         somaPesos += nota.peso;
     });
     console.log('Media ponderada: ', { somaNotas, somaPesos, resultado: somaNotas / somaPesos })
+    let result = document.getElementById('media-ponderada-resultado');
+    result.innerHTML = `resultado = ${somaNotas / somaPesos}`;
 }
 
 function trocarDeCor() {
@@ -52,19 +59,22 @@ function incrementar(tipo) {
     if (tipo == '-' && incremento.value > 0) {
         incremento.value--;
     }
-
 }
 
 function calcularDivisivel() {
     const num1 = parseInt(document.getElementById('num1').value)
     const num2 = parseInt(document.getElementById('num2').value)
+    let result = document.getElementById('divisivel-resultado');
     console.log(num1, num2)
 
     if (num1 % num2 == 0) {
         console.log("É divisível")
+        result.innerHTML = `É divisível`;
     }
-    else
+    else {
         console.log("Não é divisível")
+        result.innerHTML = `Não é divisível`;
+    }
 }
 
 function calcularMes() {
@@ -112,4 +122,6 @@ function calcularMes() {
     }
 
     console.log(mes)
+    let result = document.getElementById('mes-resultado');
+    result.innerHTML = `${mes}`;
 }
