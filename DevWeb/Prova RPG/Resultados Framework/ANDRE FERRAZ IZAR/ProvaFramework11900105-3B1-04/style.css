@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#forms{
+    text-align: center;
+    background-color: pink;
+    width: 50%;
+    height: 100%;
+}
+#btnenv{
+    border-radius: 5px;
+    background-color: yellow;
+}

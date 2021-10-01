@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Prova Frame</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="title">
+        <h1>Cadastro de Personagem</h1>
+    </div>
+
+<div class="form">
+
+    <form action="javascript:void(0);" method="POST" onsubmit="app.Add()"> 
+        <input type="text" id="add-todo" placeholder="Nome">
+        <input type="submit" value="Enviar" class="btn btn-primary">
+    </form>
+    <form action="javascript:void(0);" method="POST" onsubmit="app.Add()"> 
+        <input type="text" id="add-todo" placeholder="Raça">
+        <input type="submit" value="Enviar" class="btn btn-primary">
+    </form>
+    <div class="campo">
+                <label for=" raça">Classe: </label>
+                <select name="classe" id="classe">
+                    <option value="Guerreiro">Guerreiro</option>
+                    <option value="Mago">Mago</option>
+                    <option value="Feiticeiro">Feiticeiro</option>
+                </select>
+            </div>
+    <form id="second"> 
+        <input type="text" id="procurar" placeholder="Procurar">
+        <input type="submit" id='procurarBtn' value="Procurar" class="btn btn-primary">
+    </form>
+
+    <div class="text">
+
+        <p id="counter"></p>
+    
+            <h3 class="to-do">Resultado:</h3>
+
+            
+    <table>
+            <tbody id="tasks">
+            </tbody>
+        </table>
+
+    </div>
+
+</div>
+
+<div id="edit-box" role="aria-hidden">
+    <form action="javascript:void(0);" method="POST" id="save-edit">
+      <input type="text" id="edit-todo">
+      <input type="submit" value="Save" class="btn btn-success"/> <a onclick="CloseInput()" aria-label="Close">&#10006;</a>
+    </form>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CADASTRO PERSONAGEM</title>
+    <script type="text/javascript" src="rpg_maria.js"> </script>
+    <link rel="stylesheet" href="rpg.css">
+</head>
+
+<body>
+    <form name="cadastro" method="post" action="">
+        <div class="box1">
+            <h1>Cadastro do Personagem</h1>
+            <div class="campo">
+                <label for="nomejog">Nome: </label>
+                <input id="nome" type="text" value="" placeholder="Digite o nome">
+            </div>
+
+            <div class="campo">
+                <label for="classe">Classe: </label>
+                <select name="classe" id="classe">
+                    <option value="Guerreiro">Guerreiro</option>
+                    <option value="Mago">Mago</option>
+                    <option value="Feiticeiro">Feiticeiro</option>
+                </select>
+            </div>
+
+            </label>
+            <div class="campo">
+                <label for="raca">Raça: </label>
+                <div id="raca">
+                <input type="radio" name="raca" value="Humano">Humano</input>
+                <input type="radio" name="raca" value="Elfo">Elfo</input>
+                <input type="radio" name="raca" value="Anão"> Anão</input>
+              </div>
+                </label>
+            </div>
+
+            <div class="campo">
+                <div class="atributos">
+                    <h1>Atributos:</h1>
+                    <div class="pontos">
+                        <label>Pontos: </label>
+                        <input type="text" name="pt" id="pt" size="2" value="10" />
+                    </div>
+                    <div class="atributo">
+                        <input type="button" value="-" name ="forca" class="botao" onclick="remove(0, 'forca')" />
+                        <input type="text" name="forca" id="forca" size="2" value="0" />
+                        <input type="button" value="+" name="forca" class="botao" onclick="adiciona(10, 'forca')" />
+                        <label>Força</label>
+                    </div>
+                    <div class="atributo">
+                        <input type="button" value="-" class="botao" onclick="removee(0, 'agilidade')" />
+                        <input type="text" name="agilidade" id="agilidade" size="2" value="0" />
+                        <input type="button" value="+" class="botao" onclick="adicionaa(10, 'agilidade')" />
+                        <label>Agilidade</label>
+                    </div>
+                </div>
+            </div>
+
+           <button type="button" onclick="enviar()">ENVIAR</button>
+
+        </div>
+        <div class="box2">
+            <h1>RESULTADO</h1>
+            <div class="campo">
+                <label for="nomejog">Nome: </label>
+                <input id="Nome" type="text" value="" placeholder="Digite o nome">
+            </div>
+            <div class="campo">
+                <label for="classejog">Classe: </label>
+                <input id="Classe" type="text" value="" placeholder="Digite a classe">
+            </div>
+            <div class="campo">
+                <label for="raçajog">Raça: </label>
+                <input id="Raça" type="text" value="" placeholder="Digite a raça">
+            </div>
+            <div class="campo">
+                <label for="forcajog">Força: </label>
+                <input id="Força" type="text" value="" >
+            </div>
+            <div class="campo">
+                <label for="agilidadejog">Agilidade: </label>
+                <input id="Agilidade" type="text" value="" >
+            </div>
+        
+
+        </div>
+    </form>
+
+
+	<div id="resultado" class="atributos">
+	</div>
+
+</body>
+
+</html>

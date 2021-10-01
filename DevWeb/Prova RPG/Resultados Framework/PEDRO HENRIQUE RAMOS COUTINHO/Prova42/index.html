@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cadastro Personagem</title>
+    <script type="text/javascript" src="main.js"> </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form class="form-rpg" name="cadastro" method="post" action="">
+        <div class="container">
+            <legend>Cadastro do Personagem</legend>
+            <div class="campo">
+                <label for="nomejog">Nome: </label>
+                <input id="nome" type="text" value="" placeholder="Digite o nome">
+            </div>
+
+            <div class="campo">
+                <label for=" raça">Classe: </label>
+                <select name="classe" id="classe">
+                    <option value="Guerreiro">Guerreiro</option>
+                    <option value="Mago">Mago</option>
+                    <option value="Feiticeiro">Feiticeiro</option>
+                </select>
+            </div>
+
+            </label>
+            <div class="campo">
+                <label for="raca">Raça: </label>
+                <input type="radio" name="raca" value="Humano" checked> Humano</input>
+                <input type="radio" name="raca" value="Elfo"> Elfo</input>
+                <input type="radio" name="raca" value="Anão"> Anão</input>
+                </label>
+            </div>
+
+            <div class="campo">
+                <div class="atributos">
+                    <legend>Atributos</legend>
+                    <div class="pontos">
+                        <label>Pontos</label>
+                        <input type="text" name="pt" id="pt" size="2" value="10" />
+                    </div>
+                    <div class="atributo">
+                        <input type="button" value="+" class="botao" onclick="adicionaAtributo('vigor')" />
+                        <input type="button" value="-" class="botao" onclick="removeAtributo('vigor')" />
+                        <input type="text" name="vigor" id="vigor" size="2" value="0" />
+                        <label>Vigor</label>
+                    </div>
+                    <div class="atributo">
+                        <input type="button" value="+" class="botao" onclick="adicionaAtributo('percepcao')" />
+                        <input type="button" value="-" class="botao" onclick="removeAtributo('percepcao')" />
+                        <input type="text" name="percepcao" id="percepcao" size="2" value="0" />
+                        <label>Percepção</label>
+                    </div>
+                    <div class="atributo">
+                        <input type="button" value="+" class="botao" onclick="adicionaAtributo('concentracao')" />
+                        <input type="button" value="-" class="botao" onclick="removeAtributo('concentracao')" />
+                        <input type="text" name="concentracao" id="concentracao" size="2" value="0" />
+                        <label>Concentração</label>
+                    </div>
+                    <div class="atributo">
+                        <input type="button" value="+" class="botao" onclick="adicionaAtributo('agilidade')" />
+                        <input type="button" value="-" class="botao" onclick="removeAtributo('agilidade')" />
+                        <input type="text" name="agilidade" id="agilidade" size="2" value="0" />
+                        <label>Agilidade</label>
+                    </div>
+                </div>
+            </div>
+
+           <button type="button" onclick="enviar()">Enviar</button>
+           <button type="button" onclick="limpar()">Limpar</button>
+
+           <div id="resultado" class="atributos">
+            <div class="atributo">
+                <legend>Resultado</legend>
+                <input type="text" name="resultadoNome" id="resultadoNome"/>
+                <label>Nome</label><br>
+                <input type="text" name="resultadoClasse" id="resultadoClasse"/>
+                <label>Classe</label><br>
+                <input type="text" name="resultadoRaca" id="resultadoRaca"/>
+                <label>Raça</label><br>
+                <input type="text" name="resultadoVigor" id="resultadoVigor" size="2" value="0" />
+                <label>Vigor</label><br>
+                <input type="text" name="resultadoPercepcao" id="resultadoPercepcao" size="2" value="0" />
+                <label>Percepção</label><br>
+                <input type="text" name="resultadoConcentracao" id="resultadoConcentracao" size="2" value="0" />
+                <label>Concentração</label><br>
+                <input type="text" name="resultadoAgilidade" id="resultadoAgilidade" size="2" value="0" />
+                <label>Agilidade</label><br>
+            </div>
+        </div>
+
+        </div>
+    </form>
+    
+    
+
+</body>
+
+</html>

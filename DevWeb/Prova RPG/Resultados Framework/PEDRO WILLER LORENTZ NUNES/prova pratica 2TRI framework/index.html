@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Prova Pratica 2TRI</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="cadastro">
+          <h3>Qual o seu nome?</h3>
+          <input
+            class="text"
+            type="text"
+            name=""
+            id="name"
+            placeholder="Nome"
+            onchange="getName()"
+          />
+  
+          <div class="select">
+            <h3>Selecione uma Classe</h3>
+  
+            <select name="" id="selectField" onchange="getSelectValue()">
+              <option>Selecione uma das classes a seguir</option>
+              <option value="Monge">Monge</option>
+              <option value="Ladino">Ladino</option>
+              <option value="Mago">Mago</option>
+              <option value="Paladino">Paladino</option>
+            </select>
+          </div>
+  
+          <div class="radio">
+            <h3>Selecione uma Raca</h3>
+  
+            <form name="meuForm" onchange="radio()">
+              <input type="radio" name="option" value="Humano" />
+              <label for="Humano">Humano</label>
+              <input type="radio" name="option" value="Elfo" />
+              <label for="Elfo">Elfo</label>
+              <input type="radio" name="option" value="Tiefling" />
+              <label for="Tiefling">Tiefling</label>
+            </form>
+          </div>
+  
+          <div class="atributos">
+            <div>
+              <h3>Pontos Restantes a serem distribuidos:</h3>
+              <span id="maxPoints">10</span>
+            </div>
+  
+            <div>
+              <p>Força</p>
+              <button class="inc">+</button><button class="dec">-</button
+              ><input
+                class="number"
+                value="0"
+                type="text"
+                name=""
+                id="str"
+                placeholder=""
+                readonly
+              />
+            </div>
+            <div>
+              <p>Destreza</p>
+              <button class="inc">+</button><button class="dec">-</button
+              ><input
+                class="number"
+                value="0"
+                type="text"
+                name=""
+                id="dex"
+                placeholder=""
+                readonly
+              />
+            </div>
+            <div>
+              <p>Sabedoria</p>
+              <button class="inc">+</button><button class="dec">-</button
+              ><input
+                class="number"
+                value="0"
+                type="text"
+                name=""
+                id="sab"
+                placeholder=""
+                readonly
+              />
+            </div>
+            <div>
+              <p>Inteligência</p>
+              <button class="inc">+</button><button class="dec">-</button
+              ><input
+                class="number"
+                value="0"
+                type="text"
+                name=""
+                id="int"
+                placeholder=""
+                readonly
+              />
+            </div>
+  
+            <button name="submit" class="enviar" id="enviar" onclick="sendMods()">
+              Enviar
+            </button>
+          </div>
+        </div>
+      </section>
+  
+      <section>
+        <div class="resultado">
+          <label for="">Nome:</label>
+          <input class="text" type="text" name="" id="resultNome" readonly />
+          <label for="">Classe:</label>
+          <input class="text" type="text" name="" id="resultClasse" readonly />
+          <label for="">Raça:</label>
+          <input class="text" type="text" name="" id="resultRaca" readonly />
+          <label for="">Força:</label>
+          <input class="text" type="text" name="" id="resultStr" readonly />
+          <label for="">Destreza:</label>
+          <input class="text" type="text" name="" id="resultDex" readonly />
+          <label for="">Sabedoria:</label>
+          <input class="text" type="text" name="" id="resultSab" readonly />
+          <label for="">Inteligência:</label>
+          <input class="text" type="text" name="" id="resultInt" readonly />
+        </div>
+      </section>  
+    </main>
+
+    <footer>
+      <p>Feito com o <span>❤️</span> por Pedro Willer (3b1 - 44)</p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

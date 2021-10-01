@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prova FrameWork</title>
+	<link rel="stylesheet" href="css/style.css">
+	
+</head>
+<body>
+
+   <div class="box">
+   	<div class="content">  
+   	  <form name="cadastro" method="post" action="">
+        <div>
+            <h1>Cadastro do Personagem</h1>
+            <div class="campo">
+                <label for="nomejog">Nome: </label>
+                <input id="nome" type="text" value="" placeholder="Digite o nome">
+            </div>
+
+            <div class="campo">
+                <label for=" raça">Classe: </label>
+                <select name="classe" id="classe">
+                    <option value="Guerreiro">Guerreiro</option>
+                    <option value="Mago">Mago</option>
+                    <option value="Arqueiro">Arqueiro</option>
+                </select>
+            </div>
+
+            </label>
+            <div class="campo">
+                    <label for="raca">Raça: </label>
+                <form name="formraca" id="raca" onchange="raca()">
+                        <input type="radio" name="raca" value="Humano" checked>Humano</input>
+                        <input type="radio" name="raca" value="Elfo">Elfo</input>
+                        <input type="radio" name="raca" value="Orc">Orc</input>
+                </form>
+               
+            </div>
+
+            <div class="campo">
+                <div class="atributos">
+                    <legend>Atributos:</legend>
+                    <div class="pontos">
+                        <label>Pontos: </label>
+                        <input readonly type="text" name="pt" id="pt" size="2" value="10" />
+                    </div>
+                    <div class="atributo">
+                        <input type="button" value="+" class="botao" onclick="addforca('addforca')" />
+
+                        <input type="button" value="-" class="botao" onclick="removeforca('rmvforca')" />
+
+                        <input readonly type="text" name="forca" id="forca" size="2" value="0" />
+
+                        <label>Força</label> <br>
+
+                         <input type="button" value="+" class="botao" onclick="adddestreza('destreza')" />
+
+                        <input type="button" value="-" class="botao" onclick="removedestreza('destreza')" />
+
+                        <input readonly type="text" name="destreza" id="destreza" size="2" value="0" />
+
+                        <label>Destreza</label> <br>
+
+                         <input type="button" value="+" class="botao" onclick="addsabedoria('sabedoria')" />
+
+                        <input type="button" value="-" class="botao" onclick="removesabedoria('sabedoria')" />
+
+                        <input readonly type="text" name="sabedoria" id="sabedoria" size="2" value="0" />
+
+                        <label>Sabedoria</label> <br>
+
+                        <input type="button" value="+" class="botao" onclick="addinteligencia('inteligencia')" />
+
+                        <input type="button" value="-" class="botao" onclick="removeinteligencia('inteligencia')" />
+
+                        <input readonly type="text" name="inteligencia" id="inteligencia" size="2" value="0" />
+
+                        <label>Inteligência</label> <br>
+
+                    </div>
+                </div>
+            </div>
+
+           <button id="enviar" type="button" onclick="enviocis()">enviar</button>
+
+        </div>
+    </form>
+    <div>
+        <h1>Status final do personagem:</h1>
+        <h2>Nome:</h2>
+        <p id="nomer" style="color: white;">-</p>
+        <h2>Classe:</h2>
+        <p id="cr" style="color: white;">-</p>
+        <h2>Raça:</h2>
+        <p id="rr" style="color: white;">-</p>
+        <h2>Força:</h2>
+        <p id="fr" style="color: white;">-</p>
+        <h2>Destreza:</h2>
+        <p id="dr" style="color: white;">-</p>
+        <h2>Sabedoria:</h2>
+        <p id="sr" style="color: white;">-</p>
+        <h2>Inteligência:</h2>
+        <p id="ir" style="color: white;">-</p>
+    </div>
+
+	<div id="resultado" class="atributos">
+	</div>
+	</div>
+   </div>
+    
+     <script src="script.js"></script>
+</body>
+</html>

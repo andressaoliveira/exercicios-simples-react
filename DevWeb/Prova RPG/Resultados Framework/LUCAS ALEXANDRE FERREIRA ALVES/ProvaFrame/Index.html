@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cadastro Personagem</title>
+    <script type="text/javascript" src="script.js"> </script>
+    <link rel="stylesheet" href="style.css">
+
+<!--Parte de estilização do projeto -->
+<style>
+    body {
+      background-color: #4C71FF;
+      
+	border-style: groove;
+	border-width: 2px;
+	border-left-width: 10px;
+	border-right-width: 10px;
+	border-color: rgb(0, 0, 0);
+    text-align: justify
+}
+    
+    
+    h1 {
+      color: white;
+      text-align: center;
+      font-family: verdana;
+      font-size: 20px;
+    }
+    
+    p {
+      font-family: verdana;
+      font-size: 20px;
+    }
+    
+    </style>
+    </head>
+<body>
+    <h1>Rpg Game</h1>
+    <form name="cadastro" method="post" action="">
+        <div>
+            <legend>Cadastro do Personagem</legend>
+            <div class="campo">
+                <label for="nomejog">Nome: </label>
+                <input id="nome" type="text" value="" placeholder="Digite o nome">
+            </div>
+
+            <div class="campo">
+                <label for=" raça">Classe: </label>
+                <select name="classe" id="classe">
+                    <option value="Guerreiro">Guerreiro</option>
+                    <option value="Mago">Mago</option>
+                    <option value="Caçador">Caçador</option>
+                    <option value="Ladino">Ladino</option>
+                </select>
+            </div>
+
+            </label>
+            <div class="campo">
+                <label for="raca">Raça: </label>
+                <input type="radio" name="raca" value="Humano" checked>Humano</input>
+                <input type="radio" name="raca" value="Elfo">Elfo</input>
+                <input type="radio" name="raca" value="Orc"> Orc</input>
+                <input type="radio" name="raca" value="Goblin"> Goblin</input>
+                </label>
+            </div>
+
+            <div class="campo">
+                <div class="atributos">
+                    <legend>Atributos:</legend>
+                    <div class="pontos">
+                        <label>Pontos: </label>
+                        <input type="text" name="pt" id="pt" size="2" value="10" />
+                    </div>
+                    <div class="atributo">
+                        <input type="button" value="+" class="botao" onclick="adicionaAtributo('forca')" />
+                        <input type="button" value="-" class="botao" onclick="removeAtributo('forca')" />
+                        <input type="text" name="forca" id="forca" size="2" value="0" />
+                        <label>Força</label>
+                        <div class="atributo">
+                            <input type="button" value="+" class="botao" onclick="adicionaAtributo('agilidade')" />
+                            <input type="button" value="-" class="botao" onclick="removeAtributo('agilidade')" />
+                            <input type="text" name="agilidade" id="agilidade" size="2" value="0" />
+                            <label>Agilidade</label>
+                        </div>
+                        <div class="atributo">
+                            <input type="button" value="+" class="botao" onclick="adicionaAtributo('intel')" />
+                            <input type="button" value="-" class="botao" onclick="removeAtributo('intel')" />
+                            <input type="text" name="intel" id="intel" size="2" value="0" />
+                            <label>Inteligência</label>
+                        </div>
+                        <div class="atributo">
+                            <input type="button" value="+" class="botao" onclick="adicionaAtributo('Vit')" />
+                            <input type="button" value="-" class="botao" onclick="removeAtributo('Vit')" />
+                            <input type="text" name="Vit" id="Vit" size="2" value="0" />
+                            <label>Vitalidade</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           <button type="button" onclick="">enviar</button>
+          
+        </div>
+    </form>
+
+
+	<div id="resultado" class="atributos">
+	</div>
+
+</body>
+<!-- Parte onde o resultado deve ser exibido  -->
+<body>
+    <h1>Resultado</h1>
+    <form name="cadastro" method="post" action="">
+        <div>
+            <legend>NOME</legend>
+            <div class="campo">
+               
+                <input id="nome" type="text" value="" >
+            </div>
+            <div>
+                <legend>CLASSE</legend>
+                <div class="campo">
+                   
+                    <input id="classe" type="text" value="" >
+                </div>
+                <div>
+                    <legend>RAÇA</legend>
+                    <div class="campo">
+                       
+                        <input id="raca" type="text" value="" >
+                    </div>
+                    <div>
+                        <legend>FORÇA</legend>
+                        <div class="campo">
+                           
+                            <input id="forca" type="text" value="" >
+                        </div>
+                        <div>
+                            <legend>AGILIDADE</legend>
+                            <div class="campo">
+                               
+                                <input id="agilidade" type="text" value="" >
+                            </div>
+                            <div>
+                                <legend>INTELIGÊNCIA</legend>
+                                <div class="campo">
+                                   
+                                    <input id="intel" type="text" value="" >
+                                </div>
+                                <div>
+                                    <legend>VITALIDADE</legend>
+                                    <div class="campo">
+                                       
+                                        <input id="Vit" type="text" value="" >
+                                    </div>
+
+           
+	</div>
+    <script src="./main.js"></script>
+    <!-- Conexão do html com o Js -->
+</body>
+
+</html>

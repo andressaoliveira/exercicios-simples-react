@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Sprint</title>
+    <script type="text/javascript" src="main.js"> </script>
+    <link rel="stylesheet" href="style.css">
+    <link href="estilos/estilo.css" rel="stylesheet">
+</head>
+
+<body>
+    <br><br><br><br><br><br><br><br><br><br>
+    <form name="cadastro" method="post" action="">
+        <div>
+                    <div class="pontos">
+                        <label>Pontuacao: </label>
+                        <input type="text" name="pt" id="pt" size="2" value="15" min='0' />
+                    </div>
+                    <br>
+                    <div class="atributo">
+                        <label>Dev1</label>
+                        <input id="devi1" type="number" value="" min='0'>
+                        <input type="button" value="+" class="botao" onclick="addDev1 ()" />
+                        <input type="button" value="-" class="botao" onclick="removeDev1 ()" />
+
+                    </div>
+                    <br>
+                    <div class="atributo">
+                        <label>Dev2</label>
+                        <input id="devi2" type="number" value="" min='0'>
+                        <input type="button" value="+" class="botao" onclick="addDev2 ()" />
+                        <input type="button" value="-" class="botao" onclick="removeDev2 ()" />
+                       
+                    </div>
+                    <br>
+                    <div class="atributo">
+                        <label>Dev3</label>
+                        <input id="devi3" type="number" value="" min='0'>
+                        <input type="button" value="+" class="botao" onclick="addDev3 ()" />
+                        <input type="button" value="-" class="botao" onclick="removeDev3 ()" />
+                      
+                    </div>
+                </div>
+            </div>
+            <br>
+           <button type="button" onclick="enviar()">enviar</button>
+            <br><br>
+           <label>Desenvolvedor 1: </label>
+           <input type='text' id="lblDev1" value='' disabled />
+           <br><br>
+           <label>Desenvolvedor 2: </label>
+           <input type='text' id="lblDev2" value=''disabled/>
+           <br><br>
+           <label>Desenvolvedor 3: </label>
+           <input type='text' id="lblDev3" value='' disabled/>
+
+        </div>
+    </form>
+
+
+	
+	</div>
+
+</body>
+
+</html>

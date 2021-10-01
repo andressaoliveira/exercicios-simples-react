@@ -1,0 +1,15 @@
+body
+{
+    background-color: grey;
+}
+
+label, legend
+{
+    color: white
+}
+
+
+.Species_radioButton
+{
+    color: white;
+}

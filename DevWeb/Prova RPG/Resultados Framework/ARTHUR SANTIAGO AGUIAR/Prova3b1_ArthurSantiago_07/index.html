@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Cadastro Personagem</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+  <form id="register"class="form">
+    <fieldset class="form-container">
+      <h1 class="title">Cadastro do Personagem</h1>
+      <div class="mainBody">
+        <div class="d-flex align-items-center mb-3">
+          <label for="name" class="form-label">Nome: </label>
+          <input id="name" type="text" class="ms-2 form-control" autofocus placeholder="Digite seu nome">
+        </div>
+
+        <div class="d-flex align-items-center mb-3">
+          <label for="class" class="form-label">Classe: </label>
+          <select name="classe" id="classe" class="form-select ms-2">
+            <option value="Guerreiro">Guerreiro</option>
+            <option value="Mago">Mago</option>
+            <option value="Feiticeiro">Feiticeiro</option>
+          </select>
+        </div>
+
+        <div class="d-flex align-items-center mb-3 justify-content-between">
+          <label for="raca" class="form-label">Raça: </label>
+          <span class="d-flex">
+            <input type="radio" class="form-check-input" name="breed" value="Humano" checked>Humano</input>
+          </span>
+          <span class="d-flex">
+            <input type="radio" class="form-check-input" name="breed" value="Elfo">Elfo</input>
+          </span>
+          <span class="d-flex">
+            <input type="radio" class="form-check-input" name="breed" value="Anão"> Anão</input>
+          </span>
+        </div>
+
+        <div class="campo">
+          <label class="form-label">Atributos:</label>
+          <div class="container-attributes">
+            <div class="text-align-right">
+              <label class="label-attribute">Pontos: </label>
+              <input type="text" name="point" id="point" class="input-min ms-2" readonly value="10" />
+            </div>
+            <div class="atributo">
+              <input type="button" value="+" class="btn btn-success"onclick="addPoint('force')" />
+              <input type="button" value="-" class="btn btn-danger" onclick="removePoint('force')" />
+              <input type="text" name="force" id="force" readonly class="input-min" value="0" />
+              <label class="label-attribute">Força</label>
+            </div>
+            <div class="atributo">
+              <input type="button" value="+" class="btn btn-success"onclick="addPoint('dexterity')" />
+              <input type="button" value="-" class="btn btn-danger" onclick="removePoint('dexterity')" />
+              <input type="text" name="dexterity" id="dexterity" readonly class="input-min" value="0" />
+              <label class="label-attribute">Destreza</label>
+            </div>
+            <div class="atributo">
+              <input type="button" value="+" class="btn btn-success"onclick="addPoint('wisdom')" />
+              <input type="button" value="-" class="btn btn-danger" readonly onclick="removePoint('wisdom')" />
+              <input type="text" name="wisdom" id="wisdom" class="input-min" value="0" />
+              <label class="label-attribute">Sabedoria</label>
+            </div>
+            <div class="atributo">
+              <input type="button" value="+" class="btn btn-success"onclick="addPoint('intelligence')" />
+              <input type="button" value="-" class="btn btn-danger" onclick="removePoint('intelligence')" />
+              <input type="text" name="intelligence" id="intelligence" readonly class="input-min" value="0" />
+              <label class="label-attribute">Inteligência</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4 d-flex justify-content-center">
+            <button id="btn" class="btn btn-outline-secondary me-2">Enviar</button>
+            <button onclick="clearFields()" class="btn btn-outline-warning">Limpar</button>
+        </div>
+     </div>
+    </fieldset>
+  </form>
+  <div id="resultado" class="atributos">
+  </div>
+
+  <script type="text/javascript" src="index.js"> </script>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<!--
+    AUTOR DO PROJETO
+    MATRÍCULA: 11901462
+    NÚMERO DA CHAMADA: nº 17
+    NOME: Diana da Silva Alves
+-->
+<head>
+    <meta charset="utf-8">
+    <title>Prova-11901462-Diana</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script type="text/javascript" src="script.js"> </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <div id="divA">
+            <legend id="titlePrincipal">Cadastro de Personagem - RPG</legend>
+
+            <div class="campo">
+                <label for="nomejog" class="titles">Nome: </label>
+                <input id="inputNome" class="input-group-text" type="text" value="" placeholder="Digite o nome">
+            </div>
+
+            <div class="campo">
+                <label for="raça" class="titles">Classe: </label> <br />
+
+                <select name="classe" class="classe" id="inputClasse">
+                    <option value="Guerreiro">Guerreiro</option>
+                    <option value="Mago">Mago</option>
+                    <option value="Feiticeiro">Feiticeiro</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="raca" class="raca" class="titles">Raça: </label> <br />
+                    <input type="radio" class="form-check-input" name="raca" id="radioRaca1" value="Humano" checked>Humano</input>
+                    <input type="radio" class="form-check-input" name="raca" id="radioRaca2" value="Elfo">Elfo</input>
+                    <input type="radio" class="form-check-input" name="raca" id="radioRaca3" value="Anão"> Anão</input>
+                </label>
+            </div>
+
+            <div class="campo">
+                <div class="atributos">
+                    <legend class="titles">Atributos: </legend>
+
+                    <div class="pontos">
+                        <label>Pontos: </label>
+                        <input type="text" class="txtPontos" id="totalPontos">
+                    </div>
+
+                    <!--força, destreza, sabedoria, inteligência-->
+                    <div id="força"> 
+                            <input type="button" class="btn btn-success" value="-" class="btn-action" onclick="removeAtributo('forca')" /> <!--não alterei os nomes das func que vc deixou no arquivo html-->
+                            <input type="button" class="btn btn-danger" value="+" class="btn-action" onclick="adicionaAtributo('forca')" />
+                            <input type="number" name="forca" class="caracter" class="textForca" size="2" value="0" />
+                        <label>Força</label>
+                    </div>
+                    <div id="destreza"> 
+                            <input type="button" class="btn btn-success" value="-" class="btn-action" onclick="removeAtributo('destreza')" />
+                            <input type="button" class="btn btn-danger" value="+" class="btn-action" onclick="adicionaAtributo('destreza')" />
+                            <input type="number" name="destreza" class="caracter" class="textDestreza" size="2" value="0" />
+                        <label>Destreza</label>
+                    </div>
+                    <div id="sabedoria"> 
+                            <input type="button" class="btn btn-success" value="-" class="btn-action" onclick="removeAtributo('sabedoria')" />
+                            <input type="button" class="btn btn-danger" value="+" class="btn-action" onclick="adicionaAtributo('sabedoria')" />
+                            <input type="number" name="sabedoria" class="caracter" size="2" value="0" />
+                        <label>Sabedoria</label>
+                    </div>
+                    <div id="inteligência"> 
+                            <input type="button" class="btn btn-success" value="-" class="btn-action" onclick="removeAtributo('inteligência')" />
+                            <input type="button" class="btn btn-danger" value="+" class="btn-action" onclick="adicionaAtributo('inteligência')" />
+                            <input type="number" name="inteligência" class="caracter" size="2" value="0" />
+                        <label>Inteligência</label>
+                    </div>
+                </div>
+            </div>
+           <button type="button" class="btn btn-dark" class="btnEnviar" onclick="enviar()">Salvar</button><!--aqui também não alterei-->
+           <button type="button" class="btn btn-dark" class="botaoRemove" onclick="">Limpar</button>
+        </div>
+
+	<div id="divB">
+        <Legend id="titlePrincipal">Resultado</Legend>
+            <legend class="titles">Nome</legend>
+            <input type="text" class="nomeResultado" value="">
+
+            <legend class="titles">Classe</legend>
+            <input type="text" class="classeResultado" value="">
+
+            <legend class="titles">Raça</legend>
+            <input type="text" class="racaResultado" value="">
+
+            <legend class="titles">Força</legend>
+            <input type="text" class="forcaResultado" value="">
+
+            <legend class="titles">Destreza</legend>
+            <input type="text" class="destrezaResultado" value="">
+
+            <legend class="titles">Sabedoria</legend>
+            <input type="text" value="">
+
+            <legend class="titles">Inteligência</legend>
+            <input type="text" value="">
+	</div>
+
+</body>
+</html>

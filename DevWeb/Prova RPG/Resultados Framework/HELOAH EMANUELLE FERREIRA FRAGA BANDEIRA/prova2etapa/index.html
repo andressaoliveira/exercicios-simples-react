@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Cadastro Personagem</title>
+    <script type="text/javascript" src="script.js"> </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form name="cadastro" method="post" action="">
+        <div>
+            <legend><h1>Cadastro do Personagem</h1></legend>
+            <div class="campo">
+                <label for="nomejog">Nome: </label>
+                <input id="nome" type="text" value="" placeholder="Digite o nome">
+            </div>
+            <div class="campo">
+                <label for=" raça">Classe: </label>
+                <select name="classe" id="classe">
+                    <option value="Guerreiro">Guerreiro</option>
+                    <option value="Mago">Mago</option>
+                    <option value="Feiticeiro">Feiticeiro</option>
+                </select>
+            </div>
+            </label>
+            <div class="campo">
+                <label for="raca">Raça: </label>
+                <input id="racaH" type="radio" name="raca" value="Humano" checked>Humano</input>
+                <input id="racaE" type="radio" name="raca" value="Elfo">Elfo</input>
+                <input id="racaA" type="radio" name="raca" value="Anão"> Anão</input>
+                </label>
+            </div>
+
+            <div class="campo">
+                <div class="atributos">
+                    <br>
+                    <legend>Atributos</legend>
+                    <div class="pontos">
+                        <label>Pontos: </label>
+                        <input type="text" name="pt" id="pt" size="2" value="10" />
+                    </div>
+                    <div class="atributo">
+                        <input type="button" value="+" class="botao" onclick="adicionarForca('forca')" />
+                        <input type="button" value="-" class="botao" onclick="removerForca('forca')" />
+                        <input type="text" name="forca" id="forca" size="2" value="0" />
+                        <label>Força</label>
+                    </div>
+
+                    <div class="atributo">
+                        <input type="button" value="+" class="botao" onclick="adicionarDestreza('destreza')" />
+                        <input type="button" value="-" class="botao" onclick="removerDestreza('destreza')" />
+                        <input type="text" name="destreza" id="destreza" size="2" value="0" />
+                        <label>Destreza</label>
+                    </div>
+
+                    <div class="atributo">
+                        <input type="button" value="+" class="botao" onclick="adicionarSabedoria('sabedoria')" />
+                        <input type="button" value="-" class="botao" onclick="removerSabedoria('sabedoria')" />
+                        <input type="text" name="sabedoria" id="sabedoria" size="2" value="0" />
+                        <label>Sabedoria</label>
+                    </div>
+
+                    <div class="atributo">
+                        <input type="button" value="+" class="botao" onclick="adicionarInteligencia('inteligencia')" />
+                        <input type="button" value="-" class="botao" onclick="removerInteligencia('inteligencia')" />
+                        <input type="text" name="inteligencia" id="inteligencia" size="2" value="0" />
+                        <label>Inteligência</label>
+                    </div>
+
+                </div>
+            </div>
+
+           <button type="button" onclick="enviar()">enviar</button>
+           <button type="button" onclick="limpar()">limpar</button>
+
+        </div>
+    </form>
+
+
+	<div id="resultado" class="atributos" hidden>
+        <br><br>
+        <form name="resultado" method="post" action="">
+            <legend><h2>Resultado</h2></legend>
+            <br>
+            <div class="campo">
+                <label for="nomejog">Nome: </label>
+                <br>
+                <input id="nomeResul" type="text" value="">
+            </div>
+            <div class="campo">
+                <label for="classejog">Classe: </label>
+                <br>
+                <input id="classeResul" type="text" value="">
+            </div>
+            <div class="campo">
+                <label for="racajog">Raça: </label>
+                <br>
+                <input id="racaResul" type="text" value="">
+            </div>
+            <div class="campo">
+                <label for="forcajog">Força: </label>
+                <br>
+                <input id="forcaResul" type="text" value="">
+            </div>
+            <div class="campo">
+                <label for="destrezajog">Destreza: </label>
+                <br>
+                <input id="destrezaResul" type="text" value="">
+            </div>
+            <div class="campo">
+                <label for="sabedoriajog">Sabedoria: </label>
+                <br>
+                <input id="sabedoriaResul" type="text" value="">
+            </div>
+            <div class="campo">
+                <label for="inteligenciajog">Inteligência: </label>
+                <br>
+                <input id="inteligenciaResul" type="text" value="">
+            </div>
+        </form>
+	</div>
+
+</body>
+
+</html>

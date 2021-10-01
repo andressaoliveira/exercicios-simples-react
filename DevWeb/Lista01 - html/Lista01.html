@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 01</title>
+    <script src="script.js"> </script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="lista01" class="container">
+        <div id="media-ponderada" class="container">
+            <label>Media Ponderada:</label>
+            <input size="3" id="nota" value="" />
+            <input size="3" id="peso" value="" />
+            <button onclick="inserirValorMediaPonderada()">Inserir</button>
+            <button onclick="calcularMediaPonderada()">Calcular</button>
+            <label id="media-ponderada-resultado"></label>
+        </div>
+        <div id="cores" class="container">
+            <label>Cores:</label>
+            <button onclick="trocarDeCor()">Trocar cor</button>
+        </div>
+
+        <div id="incremento" class="container">
+            <label>Incremento:</label>
+            <input size="3" id="valor-incremento" value="5" />
+            <button onclick="incrementar('+')">+</button>
+            <button onclick="incrementar('-')">-</button>
+        </div>
+
+        <div id="divisivel" class="container">
+            <label>Divisível:</label>
+            <input size="3" id="num1" value="" />
+            <input size="3" id="num2" value="" />
+            <button onclick="calcularDivisivel()">Divisivel</button>
+            <label id="divisivel-resultado"></label>
+        </div>
+
+        <div id="mes" class="container">
+            <label>Mês:</label>
+            <input size="3" id="num-mes" value="" />
+            <button onclick="calcularMes()">Buscar</button>
+            <div id="mes-resultado"></div>
+        </div>
+    </div>
+</body>
+
+</html>

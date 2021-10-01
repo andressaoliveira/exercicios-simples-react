@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cadastro Personagem</title>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+    <form name="cadastro" method="post" action="">
+        <div>
+            <legend>Cadastro do Personagem</legend>
+            <div class="campo">
+                <label for="nomejog">Nome: </label>
+                <input id="nome" type="text" value="" class="nome" placeholder="Digite o nome">
+            </div>
+
+            <div class="campo">
+                <label for=" classe">Classe: </label>
+                <select name="classe" id="classe" class="classe">
+                    <option value="Guerreiro">Guerreiro</option>
+                    <option value="Mago">Mago</option>
+                    <option value="Feiticeiro">Feiticeiro</option>
+                </select>
+            </div>
+
+            </label>
+            <div class="campo">
+                <label for="raca" class="raca">Raça: </label>
+                <input type="radio" name="raca" value="Humano" checked>Humano</input>
+                <input type="radio" name="raca" value="Elfo">Elfo</input>
+                <input type="radio" name="raca" value="Anão"> Anão</input>
+                </label>
+            </div>
+
+            <div class="campo">
+                <div class="atributos">
+                    <legend>Atributos:</legend>
+                    <div class="pontos">
+                        <label>Pontos: </label>
+                        <input type="textPontos" name="pt" id="pt" size="2" value="10" />
+                    </div>
+                    <div class="atributo">
+                        <input type="button" value="+" class="botaoAdd" onclick="adicionaAtributo('forca')" />
+                        <input type="button" value="-" class="botaoRemove" onclick="removeAtributo('forca')" />
+                        <input type="textForca" name="forca" id="forca" size="2" value="0" />
+                        <label>Força</label>
+                    </div>
+                    <div class="atributo">
+                        <input type="button" value="+" class="botaoAdd" onclick="adicionaAtributo('destreza')" />
+                        <input type="button" value="-" class="botaoRemove" onclick="removeAtributo('detreza')" />
+                        <input type="textDestreza" name="destreza" id="forca" size="2" value="0" />
+                        <label>Destreza</label>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" onclick="enviar()" class="btnEnviar btn btn-success">enviar</button>
+
+        </div>
+    </form>
+
+
+    <div id="resultado" class="card" style="width: 18rem;">
+        <<div class="card-body">
+            <div class="campo">
+                <label for="nomejog">Nome: </label>
+                <label class="nomeResultado"></label>
+            </div>
+
+            <div class="campo">
+                <label for=" classe">Classe: </label>
+                <label class="classeResultado"></label>
+            </div>
+
+            </label>
+            <div class="campo">
+                <label for="raca">Raça: </label>
+                <label class="racaResultado"></label>
+            </div>
+
+            <div class="campo">
+                <div class="atributos">
+                    <legend>Atributos:</legend>
+                    <div class="atributo">
+                        <label>Força</label>
+                        <label class="forcaResultado"></label>
+                    </div>
+                    <div class="atributo">
+                        <label>Destreza</label>
+                        <label class="destrezaResultado"></label>
+                    </div>
+                </div>
+            </div>
+    
+            </div>
+    </div>
+
+</body>
+
+</html>

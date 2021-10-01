@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(75, 127, 204);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10%;
+    color: white;
+}
+legend{
+    font-size: large;
+    color: white;
+    margin: 2%;
+    border-bottom: solid 2px;
+    border-color: white;
+}
+input{
+    border: solid 2px;
+    border-radius: 5px;
+    border-color: rgb(255, 255, 255);
+    background-color: rgb(75, 127, 204);
+    color: rgb(255, 255, 255);
+}
+input::placeholder{
+    color: rgba(255, 255, 255, 0.774);
+}
+select{
+    border: solid 2px;
+    border-radius: 5px;
+    border-color: rgb(255, 255, 255);
+    background-color: rgb(75, 127, 204);
+    color: rgb(255, 255, 255);
+}
+.atributos input:hover{
+    background-color: white;
+    color: rgb(75, 127, 204);
+}
+.boxCadastro{
+    width: 22rem;
+    border: solid 2px;
+    border-radius: 5px;
+    padding: 3%;
+}
+.boxAtributos{
+    width: 22rem;
+    border: solid 2px;
+    border-radius: 5px;
+    padding: 1%;
+}
+.bntEnviar{
+    border: solid 2px;
+    border-radius: 5px;
+    border-color: rgb(255, 255, 255);
+    background-color: rgb(75, 127, 204);
+    margin: 2%;
+    font-size: large;
+    color: white;
+}
+.bntEnviar:hover{
+    background-color: white;
+    color: rgb(75, 127, 204);
+}

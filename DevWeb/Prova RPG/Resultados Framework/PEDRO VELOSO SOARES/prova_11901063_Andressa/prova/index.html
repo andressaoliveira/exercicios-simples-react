@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="jon.css"/>
+    <title>&#x1F335;Cadastro Personagem&#x1F335;</title>
+    <link rel="icon" href="/prova/Cactus_Jack_Records_2.png"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body id="imagemDeFundo">
+    <div class="divisor">
+        <div class="teste">
+            
+    
+                <form name="cadastro" method="post" action="">
+                    <div>
+                        
+                        <legend style="margin: 20px;">&#x2B07;Cadastro do Personagem&#x2B07;</legend>
+                        <div class="campo">
+                            <label  for="nomejog">Nome: </label>
+                            <input id="nome" type="text" onblur="mudarNome(this)" value="" placeholder="Digite o nome">
+                        </div>
+            
+                        <div class="campo">
+                            <label for=" raça">Classe: </label>
+                            <select  name="classe" onchange="mudarClase(this)" id="classe">
+                                <option value="et">&#x1F47D;E.T</option>
+                                <option value="Mago">&#x1F9D9;Mago</option>
+                                <option value="genio">&#x1F9DE;gênio</option>
+            
+                                <option value="Cavaleiro">Cavaleiro</option>
+                                <option value="Vampiro">&#x1F9DB;Vampiro</option>
+                                <option value="ferreiro">&#x1F528;Ferreiro</option>
+                            </select>
+                        </div>
+            
+                        </label>
+                        <div class="campo">
+                            <label for="raca">Raça: </label>
+                            <input type="radio" onchange="mudarRaca(this)" name="raca" value="Humano">&#128102;Humano</input>
+                            <input type="radio" onchange="mudarRaca(this)" name="raca" value="Elfo">&#x1F9DD;Elfo</input>
+                            <input type="radio" onchange="mudarRaca(this)" name="raca" value="fantasma">&#x1F47B;Fantasma</input>
+            
+                            <input type="radio" onchange="mudarRaca(this)" name="raca" value="lesma">&#x1F40C;Lesma</input>
+                            <input type="radio" onchange="mudarRaca(this)" name="raca" value="zumbi">&#x1F9DF;Zumbi</input>
+                            <input type="radio" onchange="mudarRaca(this)" name="raca" value="dog">&#x1F436;Dog</input>
+                            </label>
+                        </div>
+            
+                        <div class="campo">
+                            <div class="atributos">
+                                <legend style="margin: 20px;">&#x2B07; Atributos &#x2B07;</legend>
+                                <div class="pontos">
+                                    <label>Pontos: </label>
+                                    <input readonly  type="text" name="pt" id="pt" size="2" value="10" />
+                                </div>
+                                <div class="atributo">
+                                    <label>Força &#x1F3CB;</label>
+                                    <input type="text" name="forca" id="forca" size="2" value="0" />
+                                    <input type="button" value="+" class="botao" onclick="adicionaAtributo('forca')" />
+                                    <input type="button" value="-" class="botao" onclick="removeAtributo('forca')" />
+                                    <br/>
+                                    
+                                    <label>Speed &#x1F3C3;</label>
+                                    <input type="text" name="speed" id="speed" size="2" value="0" />
+                                    <input type="button" value="+" class="botao" onclick="adicionaAtributo('speed')" />
+                                    <input type="button" value="-" class="botao" onclick="removeAtributo('speed')" />
+                                    <br/>
+                                    
+                                    <label>QI &#x1F913;</label>
+                                    <input type="text" name="qi" id="qi" size="2" value="0" />
+                                    <input type="button" value="+" class="botao" onclick="adicionaAtributo('qi')" />
+                                    <input type="button" value="-" class="botao" onclick="removeAtributo('qi')" />
+                                    <br/>
+                                    
+                                    <label>Fome &#x1F356;</label>
+                                    <input type="text" name="fome" id="fome" size="2" value="0" />
+                                    <input type="button" value="+" class="botao" onclick="adicionaAtributo('fome')" />
+                                    <input type="button" value="-" class="botao" onclick="removeAtributo('fome')" />
+                                </div>
+                            </div>
+                        </div>
+                       <button style="background-color: #8fff63;;" type="button" onclick="enviar()">&#x2705;</button><!-- botão para salvar-->
+                       <button style="background-color:rgba(255, 0, 0, 0.637);" type="button" onclick="excluir()">&#x26D4;</button> <!-- botão para excluir  -->
+                       
+                    </div>
+                </form>
+                <div id="resultado" class="atributos">
+                </div> 
+        </div>
+      </div>
+
+      
+      
+  
+</body>
+<iframe >
+
+</iframe>
+<li>
+    <footer style="color:rgb(197, 240, 180)">
+        &#127758; Brasil
+    </footer>
+    <footer style="overflow-y: scroll ;color:rgb(142, 209, 115); visibility: unset ;" >
+        &#x1F393; Pedro Veloso Soares
+        &#x1F393; 11901063
+        &#x1F393; Turma 3B1 
+        sdaaaaaaaaadadaad
+    </footer>
+</li>
+
+<script src="script.js"></script>
+</html>

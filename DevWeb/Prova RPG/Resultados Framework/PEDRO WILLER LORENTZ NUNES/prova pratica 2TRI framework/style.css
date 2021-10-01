@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+
+button:focus{outline:0;}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #e0e0e0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  
+}
+
+body .atributos {
+  align-items: center;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer {
+  bottom: 0
+}
+
+div {
+  margin-top: 1rem;
+}
+
+select {
+  padding: .5rem;
+}
+
+.text {
+  padding: 0.5rem .25rem;
+  width: 100%;
+  border-radius: 1rem;
+  border: 1.5px solid black;
+}
+
+.number {
+  padding: 0.5rem;
+  width: 2.5rem;
+  border: none;
+}
+
+button {
+  color: #000000;
+  width: 70px;
+  height: 40px;
+  justify-content: center;
+  border-radius: 5px;
+  border: none;
+  margin-right: .25rem;
+}
+
+button:hover {
+  transition: var(--short);
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -3px -3px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.5),
+    inset 3px 3px 6px 0 rgba(116, 125, 136, .3);
+  transition: .1s;
+}
+
+.radio label {
+  margin-right: 1rem;
+}
+
+.atributos {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+h3 {
+  margin-bottom: 1rem;
+}
+
+#maxPoints {
+  font-size: 48px;
+  font-weight: bold;
+  color: #000;
+  opacity: .8;
+}
+
+.enviar {
+  margin-top: 1rem;
+}
+
+.resultado {
+  width: 15rem;
+}
+
+.resultado input {
+  padding: .75rem;
+  width: 13rem;
+  margin-bottom: 1rem;
+}
+
+.resultado {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.resultado label {
+  font-weight: bold;
+}

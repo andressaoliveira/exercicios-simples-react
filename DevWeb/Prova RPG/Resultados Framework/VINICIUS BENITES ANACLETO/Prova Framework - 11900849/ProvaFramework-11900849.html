@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cadastro Personagem</title>
+    <script type="text/javascript" src="script.js"> </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form name="cadastro" method="post" action="">
+        <div>
+            <legend>Cadastro do Personagem</legend>
+            <div class="campo">
+                <label for="nomejog">Nome: </label>
+                <input id="nome" type="text" value="" placeholder="Digite o nome">
+            </div>
+
+            <div class="campo">
+                <label for=" raça">Classe: </label>
+                <select name="classe" id="classe">
+                    <option value="Guerreiro">Guerreiro</option>
+                    <option value="Mago">Mago</option>
+                    <option value="Feiticeiro">Feiticeiro</option>
+                </select>
+            </div>
+
+            </label>
+            <div class="campo">
+                <label for="raca">Raça: </label>
+                <input type="radio" name="raca" value="Humano" checked>Humano</input>
+                <input type="radio" name="raca" value="Elfo">Elfo</input>
+                <input type="radio" name="raca" value="Anão"> Anão</input>
+                </label>
+            </div>
+
+            <div class="campo">
+                <div class="atributos">
+                    <legend>Atributos:</legend>
+                    <div class="pontos">
+                        <label>Pontos: </label>
+                        <input type="text" name="pt" id="pt" size="2" value="10" />
+                    </div>
+                    <div class="atributo">
+                        <input type="button" value="+" class="botao" onclick="adicionaAtributo('forca')" />
+                        <input type="button" value="-" class="botao" onclick="removeAtributo('forca')" />
+                        <input type="text" name="forca" id="forca" size="2" value="0" />
+                        <label>Força</label>
+                    </div>
+                </div>
+            </div>
+
+           <button type="button" onclick="">enviar</button>
+
+        </div>
+    </form>
+
+    <head>
+        <!-- Metadados -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+
+        <!-- Título da página (aparece na aba) -->
+        <title>Cadastro</title>
+    </head>
+
+    <body>  
+
+        <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+        <div>
+            <h1 id="titulo">Resultado</h1>
+            <p id="subtitulo">Suas informações</p>
+            <br>
+        </div>
+
+        <!-- Início do formulário -->
+        <form>
+
+            <fieldset class="grupo">
+                <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+            </fieldset>
+
+                <fieldset class="grupo">
+                <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+                <div class="campo">
+                    <label for="sobrenome"><strong>Classe</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </fieldset> 
+
+            <fieldset class="grupo">
+            <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+            <div class="campo">
+                <label for="sobrenome"><strong>Raça</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset> 
+
+        <fieldset class="grupo">
+        <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+        <div class="campo">
+            <label for="sobrenome"><strong>Força</strong></label>
+            <input type="text" name="sobrenome" id="sobrenome" required>
+        </div>
+    </fieldset> 
+
+        <fieldset class="grupo">
+        <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+        <div class="campo">
+            <label for="sobrenome"><strong>Destreza</strong></label>
+            <input type="text" name="sobrenome" id="sobrenome" required>
+        </div>
+    </fieldset>
+
+        <fieldset class="grupo">
+        <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+        <div class="campo">
+            <label for="sobrenome"><strong>Sabedoria</strong></label>
+            <input type="text" name="sobrenome" id="sobrenome" required>
+        </div>
+    </fieldset>
+    
+        <fieldset class="grupo">
+        <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+        <div class="campo">
+            <label for="sobrenome"><strong>Inteligência</strong></label>
+            <input type="text" name="sobrenome" id="sobrenome" required>
+        </div>
+    </fieldset> 
+    
+        </form>
+
+    </body>
+
+	<div id="resultado" class="atributos">
+	</div>
+
+</body>
+
+</html>

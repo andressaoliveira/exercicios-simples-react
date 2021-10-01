@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open sans";
+}
+
+body {
+  background-color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(50, 224, 166);
+}
+
+.title {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.form {
+  margin: 0 auto;
+  margin-top: 30px;
+  max-width: 1290px;
+  text-align: center;
+}
+
+.form form {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.form form input {
+  display: inline-block;
+}
+
+input[type="submit"],
+button,
+[aria-label] {
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  width: 120px;
+  border: none;
+  background: rgb(50, 224, 166);
+  height: 40px;
+  transition-duration: 400ms;
+  border-radius: 5px;
+  margin-left: 10px;
+  display: inline-block;
+}
+input[type="submit"]:hover {
+  background: rgb(34, 156, 116);
+}
+
+#edit-box {
+  display: none;
+  max-width: 80%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.to-do {
+  background: transparent !important;
+}
+
+#add-todo,#procurar {
+  height: 40px;
+  padding: 0 3%;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  max-width: 240px;
+}
+
+.text {
+  position: relative;
+  top: 70px;
+}
+
+#tasks {
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.btn {
+    margin-right: 10px;
+}

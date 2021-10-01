@@ -1,0 +1,9 @@
+body {
+	background-color:#ff00d4;
+}
+
+form { width: 50%;
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    transform: translate(-30%, -30%); }

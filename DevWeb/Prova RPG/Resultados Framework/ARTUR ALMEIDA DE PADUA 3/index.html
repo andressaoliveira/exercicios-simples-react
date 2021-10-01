@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Cadastro Personagem</title>
+    <script type="text/javascript" src="script.js"> </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form name="cadastro" method="post" action="">
+        <div>
+            <legend><h1>Cadastro do Personagem</h1></legend>
+            <div class="campo">
+                <label for="nome">Nome: </label>
+                <input id="nome" type="text" value="" placeholder="Digite o nome">
+            </div>
+            <div class="campo">
+                <label for="classe">Classe: </label>
+                <select name="classe" id="classe">
+                    <option value="Guerreiro">Guerreiro</option>
+                    <option value="Mago">Mago</option>
+                    <option value="Feiticeiro">Feiticeiro</option>
+                </select>
+            </div>
+            </label>
+            <div class="campo">
+                <br>
+                <label for="raca">Raça: </label>
+                <input id="Humano" type="radio" name="raca" value="Humano" checked>Humano</input>
+                <input id="Elfo" type="radio" name="raca" value="Elfo">Elfo</input>
+                <input id="Anao" type="radio" name="raca" value="Anão"> Anão</input>
+                </label>
+            </div>
+
+            <div class="campo">
+                <div class="atributos">
+                    <br>
+                    <legend>Atributos:</legend>
+                    <div class="pontos">
+                        <label>Pontos: </label>
+                        <input type="text" name="pt" id="pt" size="2" value="10" />
+                    </div>
+                    <div class="atributo">
+                        <input type="button" value="+" class="botao" onclick="adicionarForca('forca')" />
+                        <input type="button" value="-" class="botao" onclick="removerForca('forca')" />
+                        <input type="text" name="forca" id="forca" size="2" value="0" />
+                        <label>Força</label>
+                    </div>
+
+                    <div class="atributo">
+                        <input type="button" value="+" class="botao" onclick="adicionarDestreza('destreza')" />
+                        <input type="button" value="-" class="botao" onclick="removerDestreza('destreza')" />
+                        <input type="text" name="destreza" id="destreza" size="2" value="0" />
+                        <label>Destreza</label>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+
+           <button type="button" onclick="enviar()">enviar</button>
+           <button type="button" onclick="limpa()">limpar</button>
+
+        </div>
+    </form>
+
+        <br><br>
+        <form id="resultado" class="atributos" hidden name="resultado" method="post" action="">
+            <legend><h2>Resultado</h2></legend>
+            <br>
+            <div class="campo">
+                <label for="nome">Nome: </label>
+                <br>
+                <input id="nomeResulado" type="text" value="">
+            </div>
+            <div class="campo">
+                <label for="classe">Classe: </label>
+                <br>
+                <input id="classeResulado" type="text" value="">
+            </div>
+            <div class="campo">
+                <label for="raca">Raça: </label>
+                <br>
+                <input id="racaResulado" type="text" value="">
+            </div>
+            <div class="campo">
+                <label for="forca">Força: </label>
+                <br>
+                <input id="forcaResulado" type="text" value="">
+            </div>
+            <div class="campo">
+                <label for="destrezajog">Destreza: </label>
+                <br>
+                <input id="destrezaResulado" type="text" value="">
+            </div>
+        </form>
+
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cadastro Personagem</title>
+    <script type="text/javascript" src="main.js"> </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    
+</head>
+
+<body>
+
+
+
+<div id="MainForm">
+
+
+
+    <form name="cadastro" method="post" action="">
+        <div>
+            
+
+
+            <!--
+            //
+            //   Campo de atributos
+            //
+            -->
+            <legend>Cadastro do Personagem</legend>
+            <div class="campo">
+                <label for="nomejog">Nome: </label>
+                <input id="Input_Name" type="text" value="" placeholder="Digite o nome">
+            </div>
+
+            <div class="campo">
+                <label for=" raça">Classe: </label>
+                <select name="classe" id="Input_Class">
+                    <option value="Guerreiro">Guerreiro</option>
+                    <option value="Mago">Mago</option>
+                    <option value="Feiticeiro">Feiticeiro</option>
+                </select>
+            </div>
+
+            </label>
+            <div class="campo">
+                <label for="raca">Raça: </label>
+                <input id="Species_IsHuman" class="Species_radioButton" type="radio" name="raca" value="Humano"  checked>Humano</input>
+                <input id="Species_IsElf" class="Species_radioButton" type="radio" name="raca" value="Elfo">Elfo</input>
+                <input id="Species_IsDwarf" class="Species_radioButton" type="radio" name="raca" value="Anão"> Anão</input>
+                </label>
+            </div>
+
+
+
+
+
+
+            <div class="campo">
+                <div class="atributos">
+
+
+                    <br>
+                    <br>
+                    <legend>Atributos </legend>
+                    
+                    <label>Pontos Totais: </label>
+                    <div class="pontos">
+                        
+                        <input id="Atributos_MaximumValue" type="text" name="pt" id="pt" size="2" value="10" />
+                    </div>
+                    <br>
+
+
+                    <div class="atributo">
+                        <input type="button" value="+" class="botao" onclick="StatsButton(true, 'Vigor')" />
+                        <input type="button" value="-" class="botao" onclick="StatsButton(false, 'Vigor')" />
+                        <input type="text" name="Vigor" id="Vigor" size="2" value="0" />
+                        <label>Vigor</label>
+                    </div>
+
+                    <div class="atributo">
+                        <input type="button" value="+" class="botao" onclick="StatsButton(true,'Conhecimento')" />
+                        <input type="button" value="-" class="botao" onclick="StatsButton(false,'Conhecimento')" />
+                        <input type="text" name="Conhecimento" id="Conhecimento" size="2" value="0" />
+                        <label>Conhecimento</label>
+                    </div>
+
+                    <div class="atributo">
+                        <input type="button" value="+" class="botao" onclick="StatsButton(true,'Fortitude')" />
+                        <input type="button" value="-" class="botao" onclick="StatsButton(false,'Fortitude')" />
+                        <input type="text" name="Fortitude" id="Fortitude" size="2" value="0" />
+                        <label>Fortitude</label>
+                    </div>
+
+                    <div class="atributo">
+                        <input type="button" value="+" class="botao" onclick="StatsButton(true,'Vitalidade')" />
+                        <input type="button" value="-" class="botao" onclick="StatsButton(false,'Vitalidade')" />
+                        <input type="text" name="Vitalidade" id="Vitalidade" size="2" value="0" />
+                        <label>Vitalidade</label>
+                    </div>
+
+                    <div class="atributo">
+                        <input type="button" value="+" class="botao" onclick="StatsButton(true,'Forca')" />
+                        <input type="button" value="-" class="botao" onclick="StatsButton(false,'Forca')" />
+                        <input type="text" name="Forca" id="Forca" size="2" value="0" />
+                        <label>Forca</label>
+                    </div>
+
+                    <div class="atributo">
+                        <input type="button" value="+" class="botao" onclick="StatsButton(true,'Destreza')" />
+                        <input type="button" value="-" class="botao" onclick="StatsButton(false,'Destreza')" />
+                        <input type="text" name="Destreza" id="Destreza" size="2" value="0" />
+                        <label>Destreza</label>
+                    </div>
+
+                    <div class="atributo">
+                        <input type="button" value="+" class="botao" onclick="StatsButton(true,'Inteligencia')" />
+                        <input type="button" value="-" class="botao" onclick="StatsButton(false,'Inteligencia')" />
+                        <input type="text" name="Inteligencia" id="Inteligencia" size="2" value="0" />
+                        <label>Inteligencia</label>
+                    </div>
+
+                    <div class="atributo">
+                        <input type="button" value="+" class="botao" onclick="StatsButton(true,'Fé')" />
+                        <input type="button" value="-" class="botao" onclick="StatsButton(false,'Fé')" />
+                        <input type="text" name="Fé" id="Fé" size="2" value="0" />
+                        <label>Fé</label>
+                    </div>
+
+                    <div class="atributo">
+                        <input type="button" value="+" class="botao" onclick="StatsButton(true,'Sorte')" />
+                        <input type="button" value="-" class="botao" onclick="StatsButton(false,'Sorte')" />
+                        <input type="text" name="Sorte" id="Sorte" size="2" value="0" />
+                        <label>Sorte</label>
+                    </div>
+
+                </div>
+            </div>
+
+            <br>
+           <button type="button" onclick="GenerateResults()">Calcular</button>
+
+        </div>
+    </form>
+
+            <!--
+            //
+            //  Formulário de respostas
+            //    
+            -->
+
+
+            </div>
+            <div id="ResultForm" class="atributos">
+                <br>
+                <br>
+                <legend>Resultado</legend>
+            
+            
+                <div class="campo">
+                    <input id="Result_Name" type="text" value=" "><label>  Nome </label>
+                </div>
+            
+                <div class="campo">
+                    <input id="Result_Class" type="text" value=" "><label>  Classe </label>
+                </div>
+            
+                <div class="campo">
+                    <input id="Result_Species" type="text" value=" "><label>  Raça </label>
+                </div>
+            
+                <div class="campo">
+                    <input id="Result_Vigor" type="text" value=" "><label>  Vigor </label>
+                </div>
+            
+                <div class="campo">
+                    <input id="Result_Attunement" type="text" value=" "><label>  Conhecimento </label>
+                </div>
+            
+                <div class="campo">
+                    <input id="Result_Endurance" type="text" value=" "><label>  Fortitude </label>
+                </div >
+            
+                <div class="campo">
+                    <input id="Result_Vitality" type="text" value=" "><label>  Vitalidade </label>
+                </div>
+            
+                <div class="campo">
+                    <input type="text" id="Result_strength" value=" "><label>  Força </label>
+                </div>
+            
+                <div class="campo">
+                    <input id="Result_Dexterity" type="text" value=" "><label>Destreza</label>
+                </div>
+            
+                <div class="campo">
+                    <input id="Result_Intelligence" type="text" value=" "><label>  Inteligencia </label> 
+                </div>
+            
+                <div class="campo">
+                    <input id="Result_Faith"type="text" value=" "><label>  Fé</label>
+                </div>
+            
+                <div class="campo">
+                    <input id="Result_Luck" type="text" value=" "><label>Sorte </label>
+                </div>
+            
+            </div>
+
+
+
+
+            
+
+
+
+
+    <link rel="stylesheet" href="main.css" defer>
+</body>
+
+</html>
