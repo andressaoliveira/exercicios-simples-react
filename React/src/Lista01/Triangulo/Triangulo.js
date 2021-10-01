@@ -9,10 +9,9 @@ export default class Triangulo extends React.Component {
   }
 
   render() {
-    const { exercicio } = this.state;
     return (
       <div>
-        Lista
+        Triangulo
       </div >
     )
   }

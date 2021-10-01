@@ -9,10 +9,9 @@ export default class Contador extends React.Component {
   }
 
   render() {
-    const { exercicio } = this.state;
     return (
       <div>
-        Lista
+        Contador
       </div >
     )
   }

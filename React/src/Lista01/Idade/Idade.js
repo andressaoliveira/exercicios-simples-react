@@ -9,10 +9,9 @@ export default class Idade extends React.Component {
   }
 
   render() {
-    const { exercicio } = this.state;
     return (
       <div>
-        Lista
+        Idade
       </div >
     )
   }

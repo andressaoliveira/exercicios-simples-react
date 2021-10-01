@@ -9,10 +9,9 @@ export default class Notas extends React.Component {
   }
 
   render() {
-    const { exercicio } = this.state;
     return (
       <div>
-        Lista
+        Notas
       </div >
     )
   }
