@@ -34,7 +34,7 @@ export default class Lista01 extends React.Component {
       case 'Idade':
         return <Idade />
       default:
-        return null;
+        return 'Selecione um exercicio';
     }
   }
 
@@ -47,12 +47,12 @@ export default class Lista01 extends React.Component {
           {
             exercicios.map((ex, key) => (
               <button onClick={() => this.mudaExercicio(ex)} key={key}>
-          {ex}
-        </button>
-        ))
+                {ex}
+              </button>
+            ))
           }
-      </div>
-        { this.renderExercicios() }
+        </div>
+        {this.renderExercicios()}
       </div >
     )
   }
