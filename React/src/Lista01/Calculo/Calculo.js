@@ -11,6 +11,7 @@ export default class Calculo extends React.Component {
             soma: null,
             produto: null,
             media: null,
+            mostrar: false
         };
     }
 
@@ -22,7 +23,10 @@ export default class Calculo extends React.Component {
         const { numero, numeros } = this.state;
         let numerosInsert = numeros;
         numerosInsert.push(numero);
-        this.setState({ numeros: numerosInsert });
+        this.setState({
+            numeros: numerosInsert,
+            mostrar: false
+        });
     };
 
     calculo = () => {
@@ -41,14 +45,15 @@ export default class Calculo extends React.Component {
         this.setState({
             soma: soma1,
             media: soma1 / numeros.length,
-            produto: produto1
+            produto: produto1,
+            mostrar: true
         });
 
     };
 
     render() {
 
-        const { numeros, soma, produto, media } = this.state;
+        const { numeros, soma, produto, media, mostrar } = this.state;
 
         return (
             <div>
@@ -64,9 +69,11 @@ export default class Calculo extends React.Component {
                     ))}
                 </div>
 
-                <h4>{soma}</h4>
-                <h4>{produto}</h4>
-                <h4>{media}</h4>
+                {mostrar && <div>
+                    <h4>Soma: {soma}</h4>
+                    <h4> Produto: {produto}</h4>
+                    <h4>Média: {media}</h4>
+                </div>}
             </div>
         )
     }
