@@ -53,6 +53,7 @@ export default class Calculo extends React.Component {
         return (
             <div>
                 <h2>Calculo</h2>
+                Digite o número e clique em Inserir:
                 <Input onChange={(e) => this.numero(e.target.value)} />
                 <Button onClick={() => this.inserir()}>Inserir</Button>
                 <Button onClick={() => this.calculo()}>Calcular</Button>
