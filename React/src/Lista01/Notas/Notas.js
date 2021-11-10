@@ -32,10 +32,13 @@ export default class Notas extends React.Component {
             nota1,
             nota2,
             media,
-            mensagem: this.obtemMensagem(media),
+            mensagem: this.obtemMensagem(media)
+        });
+        this.setState({
+            notas: notasInsert,
             mostrar: false
         });
-        this.setState({ notas: notasInsert });
+        console.log(this.state.notas)
     };
 
     obtemMensagem(nota) {
@@ -58,7 +61,7 @@ export default class Notas extends React.Component {
             aprovados: notas.filter(nota => nota.mensagem === 'Aprovado'),
             exames: notas.filter(nota => nota.mensagem === 'Exame'),
             reprovados: notas.filter(nota => nota.mensagem === 'Reprovado'),
-            mediaGeral: soma/notas.length,
+            mediaGeral: soma / notas.length,
             mostrar: true
         })
     };
@@ -78,9 +81,9 @@ export default class Notas extends React.Component {
                 <Button onClick={() => this.calculo()}>Calcular</Button>
 
                 <div id="individual">
-                    {
+                    {mostrar &&
                         notas.map((nota, key) =>
-                            <p key={key}>Aluno {key}: {nota.media} - {nota.mensagem}</p>)
+                            <p key={key}>Aluno {key+1}: {nota.media} - {nota.mensagem}</p>)
                     }
                 </div>
                 {mostrar && <div>

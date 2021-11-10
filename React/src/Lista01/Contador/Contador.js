@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from '../Base/Button';
 import Input from '../Base/Input';
 
 export default class Contador extends React.Component {
@@ -12,15 +11,8 @@ export default class Contador extends React.Component {
     }
 
     palavra = (escrito) => {
-        this.setState({ palavra: escrito });
-    };
-
-    contar = () => {
-
-        var palavras = this.state.palavra
-        var quantidade1 = palavras.split(" ");
-        this.setState({ quantidade: `Quantidade de palavras: ${quantidade1.length}` });
-
+        var quantidade1 = escrito.split(" ");
+        this.setState({ quantidade: quantidade1.length});
     };
 
 
@@ -33,8 +25,7 @@ export default class Contador extends React.Component {
                 <h2>Contador</h2>
                 Digite uma frase:
                 <Input onChange={(e) => this.palavra(e.target.value)} />
-                <Button onClick={() => this.contar(quantidade)}>Numero de palavras</Button>
-                <h3>{quantidade}</h3>
+                <h3>Quantidade: {quantidade}</h3>
             </div>
         )
     }
