@@ -1,5 +1,5 @@
 import React from 'react';
-import Input from '../Base/Input';
+import Input from '../../Base/Input';
 
 export default class Contador extends React.Component {
     constructor(props) {

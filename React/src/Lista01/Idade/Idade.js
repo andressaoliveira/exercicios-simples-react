@@ -1,6 +1,6 @@
 import React from 'react';
-import Button from '../Base/Button';
-import Input from '../Base/Input';
+import Button from '../../Base/Button';
+import Input from '../../Base/Input';
 
 export default class Idade extends React.Component {
     constructor(props) {
