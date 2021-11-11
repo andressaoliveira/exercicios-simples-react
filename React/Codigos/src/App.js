@@ -1,9 +1,9 @@
 import './App.css';
-import { Route, BrowserRouter } from "react-router-dom";
-import Lista01 from './Lista01/Lista01';
-import Lista02 from './Lista02/Lista02';
+// import { Route, BrowserRouter } from "react-router-dom";
+// import Lista01 from './Lista01/Lista01';
+// import Lista02 from './Lista02/Lista02';
 import Prova01 from './Prova01/Prova01';
-import Menu from './Base/Menu'
+// import Menu from './Base/Menu'
 
 const App = () => {
   return (
