@@ -3,7 +3,7 @@
 export default function Inicio() {
     return (
         <div>
-            <h2>Incicio</h2>
+            <h2>Início</h2>
             <div>
                 <p>Escolha seu destino:</p>
                 <select name="curso" id="curso">

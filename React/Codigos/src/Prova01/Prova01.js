@@ -2,7 +2,7 @@ import { Route, BrowserRouter } from "react-router-dom";
 import Inicio from './Inicio/Inicio';
 import Destinos from './Destinos/Destinos';
 import Combustivel from './Combustivel/Combustivel';
-import Menu from './Menu';
+import Menu from './Menu/Menu';
 
 export default function Prova01() {
 

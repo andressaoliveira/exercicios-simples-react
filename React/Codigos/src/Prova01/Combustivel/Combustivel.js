@@ -16,10 +16,13 @@ export default function Combustivel() {
     }, [tempo, velocidade, rendimento, gasolina]);
 
     const calcular = () => {
-        setDistancia(tempo * velocidade);
-        setCombustivel(parseFloat(distancia) / parseFloat(rendimento));
-        setValor(combustivel * parseFloat(gasolina));
-        setMostrar(true)
+        const dist = tempo * velocidade;
+        setDistancia(dist);
+
+        const comb = parseFloat(dist) / parseFloat(rendimento)
+        setCombustivel(comb);
+        setValor(comb * parseFloat(gasolina));
+        setMostrar(true);
     };
 
     return (
