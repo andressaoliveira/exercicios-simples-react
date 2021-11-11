@@ -9,7 +9,7 @@ export default class Menu extends React.Component {
                 Menu:
                 <Link to="/">Página inicial</Link>
                 <Link to="/Lista01">Lista01</Link>
-                <Link to="/Lista02">Aula02</Link>
+                <Link to="/Lista02">Lista02</Link>
             </div>
         );
     }
