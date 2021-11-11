@@ -1,12 +1,23 @@
 .menu {
     display: flex;
     flex-direction: column;
+    padding-top: 20px;
     padding-right: 20px;
-    margin-right: 10px;
+    margin: 0 10px;
     min-width: 180px;
     border-right: 2px solid gray;
 }
 
-.prova01{
+.menu>a {
+    text-decoration: none;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.menu>a:hover {
+    background-color: lightblue;
+}
+
+.prova01 {
     display: flex;
 }

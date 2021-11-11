@@ -5,7 +5,12 @@ export default function Inicio() {
         <div>
             <h2>Incicio</h2>
             <div>
-                Escola o destino:
+                <p>Escolha seu destino:</p>
+                <select name="curso" id="curso">
+                    <option value="stl">São Thomé das Letras</option>
+                    <option value="cap">Capitólio</option>
+                    <option value="sci">Serra do Cipó</option>
+                </select>
             </div>
         </div>
     )
