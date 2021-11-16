@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+@import '../Prova.scss';
+
+.combustivel {
+  flex: 3;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-main {
+  font-family: 'Roboto', sans-serif;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  hr {
+    width: 100%;
+    border: 1px solid $primaryColor;
+  }
+
+  .form-row {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+
+    .form-item {
+      display: flex;
+      flex-direction: column;
+      font-family: 'Roboto', sans-serif;
+
+      input {
+        font-size: 15px;
+        text-align: center;
+        padding: 5px;
+        border: 1px solid $primaryColor;
+        border-radius: 5px;
+      }
+
+      &.align-margin {
+        margin-left: 15px;
+      }
+    }
+
+    button {
+      font-family: 'Roboto', sans-serif;
+      margin: 15px 0;
+      background-color: $primaryColor;
+      border: 1px solid $primaryColor;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 16px;
+      padding: 5px;
+      border-radius: 5px;
+      width: 30%;
+    }
+  }
+
+  .resultado-formulario {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 50px;
+
+    hr {
+      width: 30%;
+      border: 1px solid $primaryColor;
+      margin: 0 0 15px;
+    }
+
+    h1 {
+      color: $primaryColor;
+      font-size: 25px;
+      margin: 0;
+    }
+
+    p{
+      margin: 0 0 15px;
+    }
+  }
+}

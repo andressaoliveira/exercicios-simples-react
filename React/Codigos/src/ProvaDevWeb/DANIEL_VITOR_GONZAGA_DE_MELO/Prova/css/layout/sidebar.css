@@ -1,0 +1,20 @@
+aside{
+
+    /*Estilo*/
+    height: 100vh;
+    min-width: 300px;
+    width: 25vw;
+    border-right: 1px solid var(--main-color);
+
+    /*Posicionamento*/
+    top: 0;
+    left: 0;
+    position: fixed;
+
+    /*Flexbox*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 10px;
+}

@@ -1,0 +1,19 @@
+*{
+    font-family: 'Roboto', sans-serif;;
+}
+
+.routes{
+    display: flex;
+    flex-direction: row;
+}
+
+.foto{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    padding: 10px;
+}
+
+.pages{
+    margin: 30px;
+}

@@ -1,0 +1,58 @@
+.input{
+    /*Estilos*/
+    width: 200px;
+    height: 30px;
+}
+
+.input > input{
+    /*Estilos*/
+    width: 200px;
+    height: 100%;
+    background-color: transparent;
+    border: 1px solid var(--tertiary-color);
+    outline: 0;
+
+    /*Posicionamento*/
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+
+    /*Animações*/
+    transition: all .5s ease-in-out;
+
+    /*Tipografia*/
+    color: transparent;
+    text-shadow: 0px 0px var(--main-color);
+}
+
+.input > span{
+    /*Posicionamento*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: -1;
+
+    /*Tipografia*/
+    color: var(--tertiary-color);
+    width: fit-content;
+
+    /*Animações*/
+    transition: all .5s ease-in-out;
+}
+
+.input > input:focus,
+.input > input:not(:placeholder-shown){
+    border-color: var(--main-color);
+}
+
+.input > input:focus + span,
+.input > input:not(:placeholder-shown) + span{
+    /*Tipografia*/
+    color: var(--main-color);
+
+    /*Posicionamento*/
+    top: 0;
+    transform: translate(-50%, -100%);
+}

@@ -1,0 +1,36 @@
+$main-color: #121212;
+.menu{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    background: $main-color;
+    min-width: 250px;
+    min-height: 100vh;
+    color: white;
+    
+    a{
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        padding-left: 30px;
+    }
+
+    a:hover{
+        color: #d3d3d3
+    }
+
+    h4{
+        padding-left: 30px;
+    }
+
+    li{
+        padding-bottom: 10px;
+    }
+
+    .sidebar-header{
+        margin-bottom: 20px;
+        border-bottom: 1px solid white;
+    }
+    
+}
+

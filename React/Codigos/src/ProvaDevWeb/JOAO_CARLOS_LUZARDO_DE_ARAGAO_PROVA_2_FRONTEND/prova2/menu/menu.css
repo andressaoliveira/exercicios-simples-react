@@ -1,0 +1,19 @@
+.menu {
+  flex: 1;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #000;
+}
+
+
+a{
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+
+

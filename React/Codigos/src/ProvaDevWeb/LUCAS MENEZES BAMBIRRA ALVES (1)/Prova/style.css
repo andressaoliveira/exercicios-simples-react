@@ -1,0 +1,43 @@
+#root {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main {
+  max-width: 350px;
+  padding-left: 32px;
+}
+.menu {
+  padding-left: 16px;
+}
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu li a {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  background-color: #ced9f1;
+  margin-bottom: 4px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  border-radius: 6px;
+}
+.menu li a:hover {
+  background-color: #b4c5eb;
+}
+img {
+  max-width: 300px;
+}
+.destinos {
+  display: flex;
+}
+.card {
+  text-align: center;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px #00000050;
+  padding: 32px;
+  margin: 64px;
+}
