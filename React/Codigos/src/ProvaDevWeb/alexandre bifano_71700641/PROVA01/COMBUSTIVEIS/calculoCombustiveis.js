@@ -33,7 +33,7 @@ export default class Calculo extends React.Component {
     };
 
     render() {
-        const { resultadoDistancia, resultadoQuantidadeLitros, exibir } = this.state;
+        const { resultadoDistancia, resultadoQuantidadeLitros, valor, exibir } = this.state;
 
         return (
             <div>

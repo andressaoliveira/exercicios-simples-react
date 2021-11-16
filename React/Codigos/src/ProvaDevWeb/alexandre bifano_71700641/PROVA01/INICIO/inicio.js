@@ -1,6 +1,5 @@
-import React from 'react';
 import React, { Component } from 'react';
-import InicioSelect from './PROVA01/Inicio/InicioSelect'
+import InicioSelect from './inicioSelect'
 
 function Inicio(){
    return (
