@@ -1,0 +1,23 @@
+.divFlex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-9 {
+    flex: 9;
+}
+
+.Prova {
+    flex: 9;
+}
+
+img {
+    max-width: 20%;
+    max-height: 180px;
+    min-width: 20%;
+    min-height: 180px;
+    margin: 0 20px;
+}
