@@ -1,6 +1,6 @@
 import './App.css';
 import Prova from
-  './ProvaDevWeb/VINICIUS LEAL GALANTINE/Prova/Prova';
+  './ProvaDevWeb/MATHEUS THIBAU PAULINO/Prova/Prova';
 
 const App = () => {
   return (
