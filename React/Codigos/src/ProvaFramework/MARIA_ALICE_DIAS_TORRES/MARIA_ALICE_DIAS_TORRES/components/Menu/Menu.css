@@ -1,0 +1,36 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    margin-right: 10px;
+    min-width: 180px;
+    border-right: 2px solid gray;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.topnav {
+    background-color: rgb(29, 39, 175);
+    overflow: hidden;
+  }
+
+  .topnav p {
+    float: left;
+    color: #fcfcfc;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+
+  .topnav p.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  .link{
+      color: #ddd;
+  }
