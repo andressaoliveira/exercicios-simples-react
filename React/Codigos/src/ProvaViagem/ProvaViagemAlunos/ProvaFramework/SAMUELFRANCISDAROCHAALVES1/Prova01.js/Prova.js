@@ -6,7 +6,7 @@ import Destino from './Destino';
 import Combustivel from './Combustivel';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
-function App() {
+function Provajs() {
   return (
     <Router>
     <div className="App">
@@ -28,4 +28,4 @@ const PaginaPrincipal = () => (
   </div>
 );
 
-export default App;
+export default Provajs;
