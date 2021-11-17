@@ -4,10 +4,10 @@ import Destinos from './Destinos/Destinos';
 import Combustivel from './Combustivel/Combustivel';
 import Menu from './Menu/Menu';
 
-export default function Prova01() {
+export default function ProvaViagem() {
 
     return (
-        <div className="prova01">
+        <div className="ProvaViagem">
             <BrowserRouter>
                 <Menu />
                 <div className="display-prova">
