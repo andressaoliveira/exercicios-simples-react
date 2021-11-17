@@ -1,0 +1,13 @@
+.navegacao {
+    list-style: none;
+}
+
+.principal {
+    text-align: center;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}

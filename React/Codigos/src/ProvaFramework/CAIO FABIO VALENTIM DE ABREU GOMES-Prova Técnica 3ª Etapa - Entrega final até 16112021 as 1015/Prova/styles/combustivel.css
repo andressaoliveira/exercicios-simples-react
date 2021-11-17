@@ -1,0 +1,19 @@
+#inicial {
+  display: flex ;
+  flex-direction: row;
+  height:100vh;
+  width: 100vw;
+}
+Nav { flex: 2;}
+.content {flex: 6;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.formdiv {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 35px 0;
+}

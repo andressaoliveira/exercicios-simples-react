@@ -1,0 +1,34 @@
+.destiny{
+  overflow-y: scroll;
+  height: 90vh;
+}
+
+.destiny::-webkit-scrollbar {
+  width: 15px;               /* width of the entire scrollbar */
+}
+
+.destiny::-webkit-scrollbar-track {
+  background: white;        /* color of the tracking area */
+}
+
+.destiny::-webkit-scrollbar-thumb {
+  background-color: blue;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid white;  /* creates padding around scroll thumb */
+}
+
+.city{
+  margin-top: 30px;
+}
+
+.city span{
+  width: 100%;
+  display: flex;
+  margin: 10px 0;
+  justify-content: space-between;
+}
+
+.city img{
+  width: 300px;
+  height: 150px;
+}

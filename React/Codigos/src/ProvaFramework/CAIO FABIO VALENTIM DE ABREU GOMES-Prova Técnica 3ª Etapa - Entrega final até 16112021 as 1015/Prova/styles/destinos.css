@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+Nav { flex: 2;}
+.content {flex: 6;
+}
+#iinicial {
+display: flex ;
+flex-direction: row;
+}
+.city {
+ display: flex;
+ flex-direction: column;
+ gap: 45px;
+}
+.card-imgs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card-imgs img {
+  width: 250px;
+  height: 250px;
+}

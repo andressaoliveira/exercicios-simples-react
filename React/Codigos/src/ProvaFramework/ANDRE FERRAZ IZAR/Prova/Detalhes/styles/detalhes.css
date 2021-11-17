@@ -1,0 +1,11 @@
+.detalhes{
+    background-color: rgb(61, 26, 185);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.btn{
+    margin-top: 7px ;
+    margin-bottom: 7px;
+}
+/*css basico para colocar uma cor de fundo e alinhar tudo no meio, e verticalmente e uma margem do botão para melhorar um pouco a aparencia*/
