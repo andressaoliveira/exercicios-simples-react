@@ -1,13 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import './Personagens.css'
+import React, { useEffect, useState } from 'react';
 import api from '../api'
 
-export default function Personagens() {
+export default function Grifinoria() {
     const [personagens, setPersonagens] = useState([]);
     const [personagensFull, setPersonagensFull] = useState([]);
 
     useEffect(() => {
-        api.get('/characters')
+        api.get('/characters/house/Gryffindor')
+            //Slytherin
+            //Hufflepuff
+            //Ravenclaw
             .then((response) => setDados(response.data))
             .catch((err) => {
                 console.error("ops! ocorreu um erro: " + err);
@@ -26,25 +28,14 @@ export default function Personagens() {
     }
 
     return (
-        <div className="Personagens">
-            <div>
-                Pesquisar: <input onChange={(e) => pesquisar(e.target.value)} />
-            </div>
+        <div className="Grifinoria">
+            <h1> Grifinoria</h1>
             <div className="lista-personagens">
                 {personagens.map((item, index) => (
                     <div key={index} className="personagem">
-                        <p><h2>{item.name}</h2></p>
-                        <p>
-                            <img
-                                className="personagem-foto"
-                                src={item.image}
-                                alt={item.name}
-                            />
-                        </p>
-                        <p>{item.actor}</p>
-                        <p>Espécie: {item.species}</p>
-                        <p>Gênero: {item.gender}</p>
-                        <p>Casa: {item.house}</p>
+                        <h3>{item.name}</h3>
+                        <p>Patrono: {item.species}</p>
+                        <p>Varinha: {item.wand.wood} | {item.wand.core} | {item.wand.length} </p>
                     </div>
                 ))}
             </div>

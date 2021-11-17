@@ -11,6 +11,7 @@
 
 .display-prova{
     overflow: auto;
+    width: 100%;
 }
 
 .menu>a {
