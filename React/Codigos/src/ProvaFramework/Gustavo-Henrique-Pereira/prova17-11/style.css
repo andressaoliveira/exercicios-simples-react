@@ -1,0 +1,23 @@
+img.locais {
+padding-right:50px;
+
+}
+
+div.main {
+    background-color: rgb(133, 22, 207);
+    border: 2px solid;
+    border-radius: 8px;
+    padding: 5px;
+    text-align: center;
+      
+  }
+
+  div.main2 {
+    padding: 5px;
+    text-align: center;
+      
+  }
+
+  div.main3 {
+       background-color: rgb(25, 228, 160);
+  }
