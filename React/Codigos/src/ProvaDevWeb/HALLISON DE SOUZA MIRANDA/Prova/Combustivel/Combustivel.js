@@ -46,10 +46,14 @@ export default class Combustivel extends React.Component{
   Calculos(){
     const {tempo, velocidadeMedia, rendimentoMedio, precoGasolina, distancia, litros} = this.state;
 
-    this.mudarDistancia( parseFloat((parseFloat(tempo) * parseFloat(velocidadeMedia)).toFixed(2)) );     
-    this.mudarLitros( parseFloat((distancia / parseFloat(rendimentoMedio)).toFixed(2)) );      
-    this.mudarValorTotal( parseFloat((litros * parseFloat(precoGasolina)).toFixed(2)) )         
+    var localDistancia  = ( parseFloat((parseFloat(tempo) * parseFloat(velocidadeMedia)).toFixed(2)) )
+    var lovalLitros = ( parseFloat((localDistancia / parseFloat(rendimentoMedio)).toFixed(2)) );
+    var localTotal = ( parseFloat((lovalLitros * parseFloat(precoGasolina)).toFixed(2)) ) 
+    
         
+    this.mudarLitros(lovalLitros);    
+    this.mudarDistancia(localDistancia);   
+    this.mudarValorTotal(localTotal)
   }
 
   render(){

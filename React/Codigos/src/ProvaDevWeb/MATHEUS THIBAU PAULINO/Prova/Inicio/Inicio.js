@@ -1,26 +1,8 @@
-import React from 'react';
-
-import './Inicio.css';
+import React from "react";
+import "./Inicio.css";
 
 export class Inicio extends React.Component {
-
-    constructor(props) {
-        super(props)
-        this.state = { inputValue: '' }
-    }
-
-    //funcao para tratamento na mudanca de valor do campo destino
-    inputChange(valor) {
-        this.setState({
-            inputValue: valor
-        });
-
-        const { setInicio, newValue } = this.props;
-        setInicio(valor);
-    }
-
     render() {
-        const { inputValue } = this.props;
         return (
             <div>
                 <div className="inicio">
@@ -38,7 +20,7 @@ export class Inicio extends React.Component {
                     </div>
                     <div className="inputGroup">
                         <p>Destino</p>
-                        <select className="destinoSelect" value={inputValue} onChange={(event) => this.inputChange(event.target.value)}>
+                        <select className="destinoSelect">
                             <option value="0"> Selecione uma opção </option>
                             <option value="Marte">Marte</option>
                             <option value="Terra">Terra</option>
@@ -51,3 +33,5 @@ export class Inicio extends React.Component {
         );
     }
 }
+
+

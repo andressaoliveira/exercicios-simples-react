@@ -1,9 +1,9 @@
 import React from "react";
 import { Route, BrowserRouter } from "react-router-dom";
 import { Menu } from "./Menu/Menu";
-import { Inicio } from "./Inicio";
-import { Destino } from "./Destino";
-import { Combustivel } from "./Combustivel";
+import { Inicio } from "./Inicio/Inicio";
+import { Destino } from "./Destino/Destino";
+import { Combustivel } from "./Combustivel/Combustivel";
 
 import './Prova.css';
 

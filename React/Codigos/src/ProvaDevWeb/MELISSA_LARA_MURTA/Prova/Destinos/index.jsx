@@ -1,10 +1,10 @@
 
-import balneario1 from '../../assets/balneario1.jpg';
-import balneario2 from '../../assets/balneario2.jpg';
-import betoCarrero1 from '../../assets/betoCarrero1.jpg';
-import betoCarrero2 from '../../assets/betoCarrero2.jpg';
-import floripa1 from '../../assets/floripa1.jpg';
-import floripa2 from '../../assets/floripa2.jpg';
+import balneario1 from '../assets/balneario1.jpg';
+import balneario2 from '../assets/balneario2.jpg';
+import betoCarrero1 from '../assets/betoCarrero1.jpg';
+import betoCarrero2 from '../assets/betoCarrero2.jpg';
+import floripa1 from '../assets/floripa1.jpg';
+import floripa2 from '../assets/floripa2.jpg';
 
 export default function Destinos() {
   return (

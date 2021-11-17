@@ -1,0 +1,12 @@
+.Header{
+    display: flex;
+    flex-direction: column;
+    width: 13%;
+    padding: 10px;
+    background-color: blueviolet;
+  
+    .href{
+        padding: 5px;
+        color: black;
+    }
+}

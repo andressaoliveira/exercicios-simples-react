@@ -1,0 +1,9 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.inpt{
+    margin-bottom: 10px;
+}

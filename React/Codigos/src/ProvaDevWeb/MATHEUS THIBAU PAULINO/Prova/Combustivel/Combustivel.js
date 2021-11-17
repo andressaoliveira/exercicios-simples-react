@@ -21,8 +21,7 @@ export class Combustivel extends React.Component {
         this.setState({
             inputTempoGasto: valor
         });
-        const { setTempoGasto } = this.props;
-        setTempoGasto(valor);
+
     }
 
     //controla estado inputVelocidadeMedia
@@ -30,8 +29,6 @@ export class Combustivel extends React.Component {
         this.setState({
             inputVelocidadeMedia: valor
         });
-        const { setVelocidadeMedia } = this.props;
-        setVelocidadeMedia(valor);
     }
 
     //controla estado inputRendimentoMedio
@@ -39,16 +36,12 @@ export class Combustivel extends React.Component {
         this.setState({
             inputRendimentoMedio: valor
         });
-        const { setRendimentoMedio } = this.props;
-        setRendimentoMedio(valor);
     }
 
     inputChangePrecoCombustivel(valor) {
         this.setState({
             inputPrecoCombustivel: valor
         });
-        const { setPrecoCombustivel } = this.props;
-        setPrecoCombustivel(valor);
     }
 
     //Função que dispara validação e calculos

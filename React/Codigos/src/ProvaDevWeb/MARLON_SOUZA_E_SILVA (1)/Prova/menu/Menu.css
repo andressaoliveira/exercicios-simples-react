@@ -1,0 +1,12 @@
+.menu{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border: solid black 2px;
+    height: 100%;
+    font-weight: bold;
+}
+
+.link{
+    margin-top: 25px;
+}

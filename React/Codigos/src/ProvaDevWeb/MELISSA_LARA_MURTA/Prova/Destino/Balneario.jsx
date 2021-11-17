@@ -1,5 +1,5 @@
-import balneario1 from '../../assets/balneario1.jpg';
-import balneario2 from '../../assets/balneario2.jpg';
+import balneario1 from '../assets/balneario1.jpg';
+import balneario2 from '../assets/balneario2.jpg';
 
 export default function Balneario() {
     return (

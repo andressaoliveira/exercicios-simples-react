@@ -1,5 +1,5 @@
-import betoCarrero1 from '../../assets/betoCarrero1.jpg';
-import betoCarrero2 from '../../assets/betoCarrero2.jpg';
+import betoCarrero1 from '../assets/betoCarrero1.jpg';
+import betoCarrero2 from '../assets/betoCarrero2.jpg';
 
 export default function BetoCarreroWorld() {
     return (

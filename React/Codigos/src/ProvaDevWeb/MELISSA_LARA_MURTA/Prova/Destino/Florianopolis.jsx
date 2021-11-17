@@ -1,5 +1,5 @@
-import floripa1 from '../../assets/floripa1.jpg';
-import floripa2 from '../../assets/floripa2.jpg';
+import floripa1 from '../assets/floripa1.jpg';
+import floripa2 from '../assets/floripa2.jpg';
 
 export default function Florianopolis() {
     return (

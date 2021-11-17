@@ -1,0 +1,18 @@
+body{
+    background-color: #444;
+}
+
+.destiny{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eee;
+}
+
+.menu{
+    background-color:darkgray;
+}
+
+.botao{
+    background-color: rgb(196, 193, 193);
+}
