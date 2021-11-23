@@ -5,6 +5,7 @@ import Lista02 from './Lista02/Lista02';
 import Menu from './Base/Menu'
 import ProvaViagem from './ProvaViagem/ProvaViagem';
 import ProvaHarryPotter from './ProvaHarryPotter/ProvaHarryPotter';
+//import Prova from './ProvaViagem/ProvaViagemAlunos/ProvaFramework/ANDRE DE OLIVEIRA COELHO/Jornal/Jornal';
 
 const App = () => {
   return (
