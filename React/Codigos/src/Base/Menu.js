@@ -12,7 +12,7 @@ export default class Menu extends React.Component {
                 <Link to="/Lista02">Lista02</Link>
                 <Link to="/ProvaViagem">ProvaViagem</Link>
                 <Link to="/ProvaHarryPotter">ProvaHarryPotter</Link>
-                <Link to="/ProvaPolitica">ProvaPolitica</Link>
+                <Link to="/ProvaFinal">ProvaFinal</Link>
             </div>
         );
     }

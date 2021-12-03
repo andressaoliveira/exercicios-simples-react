@@ -5,20 +5,20 @@ import Lista02 from './Lista02/Lista02';
 import Menu from './Base/Menu'
 import ProvaViagem from './ProvaViagem/ProvaViagem';
 import ProvaFinal from './ProvaFinal/Principal';
+import ProvaHarryPotter from './ProvaHarryPotter/ProvaHarryPotter';
 
 const App = () => {
   return (
     <div className="App">
-      <ProvaFinal />
-       {/* <BrowserRouter>
+       <BrowserRouter>
         <Menu />
         <Route path="/" exact component={Lista01} />
         <Route path="/Lista01" component={Lista01} />
         <Route path="/Lista02" component={Lista02} />
         <Route path="/ProvaViagem" component={ProvaViagem} />
         <Route path="/ProvaHarryPotter" component={ProvaHarryPotter} />
-        <Route path="/ProvaPolitica" component={ProvaPolitica} />
-      </BrowserRouter>  */}
+        <Route path="/ProvaFinal" component={ProvaFinal} />
+      </BrowserRouter> 
     </div>
   );
 }
