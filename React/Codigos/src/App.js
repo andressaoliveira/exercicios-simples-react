@@ -5,7 +5,7 @@ import Lista02 from './Lista02/Lista02';
 import Menu from './Base/Menu'
 import ProvaViagem from './ProvaViagem/ProvaViagem';
 import ProvaHarryPotter from './ProvaHarryPotter/ProvaHarryPotter';
-//import Prova from './ProvaViagem/ProvaViagemAlunos/ProvaFramework/ANDRE DE OLIVEIRA COELHO/Jornal/Jornal';
+import ProvaPolitica from './ProvaPolitica/Principal';
 
 const App = () => {
   return (
@@ -18,6 +18,7 @@ const App = () => {
         <Route path="/Lista02" component={Lista02} />
         <Route path="/ProvaViagem" component={ProvaViagem} />
         <Route path="/ProvaHarryPotter" component={ProvaHarryPotter} />
+        <Route path="/ProvaPolitica" component={ProvaPolitica} />
       </BrowserRouter> 
     </div>
   );
