@@ -11,7 +11,7 @@ export default class Menu extends React.Component {
                 <Link to="/Cargos">Cargos</Link>
                 <Link to="/Filiacoes">Filiacoes</Link>
                 <Link to="/Mandatos">Mandatos</Link>
-                <Link to="/Profissoes">Profissoes</Link>
+                {/* <Link to="/Profissoes">Profissoes</Link> */}
             </div>
         );
     }
