@@ -21,14 +21,15 @@ export default function Cargos() {
 
         return (
             <div>
+                <h2>Cargos</h2>
                 <div className="cargos">
                     {
                         Cargo.map((item, index) => (
                             <div key={index} className="servico">
-                                <p>{item.CodigoCargo}</p>
-                                <p>{item.DataFim}</p>
-                                <p>{item.DataInicio}</p>
-                                <p>{item.DescricaoCargo}</p>
+                                <p>Cargo: {item.CodigoCargo} - {item.DataFim}</p>
+                                <p>Descrição: {item.DescricaoCargo}</p>
+                                <p>Início: {item.DataInicio}</p>
+                                <br /><br />
                             </div>
                         ))
                     }

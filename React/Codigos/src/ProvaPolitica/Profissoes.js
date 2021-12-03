@@ -6,8 +6,8 @@ export default function Profissoes() {
     const [profissoes, setProfissoes] = useState(null);
 
     useEffect(() => {
-        api.get('/9/profissao')
-            .then((response) => setProfissoes(response.data.ProfissaoParlamentar ))
+        api.get('/50/profissao')
+            .then((response) => setProfissoes(response.data.ProfissaoParlamentar))
             .catch((err) => {
                 console.error("ops! ocorreu um erro: " + err);
             });
@@ -21,12 +21,14 @@ export default function Profissoes() {
 
         return (
             <div>
+                <h2>Profissões</h2>
                 <div className="Profissoes">
                     {
                         Profissao.map((item, index) => (
                             <div key={index} className="servico">
-                                <p>{item.NomeProfissao}</p>
-                                <p>{item.IndicadorAtividadePrincipal}</p>
+                                <p>Profissão: {item.NomeProfissao}</p>
+                                <p>Indicador atividade principal: {item.IndicadorAtividadePrincipal}</p>
+                                <br /><br />
                             </div>
                         ))
                     }

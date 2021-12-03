@@ -36,24 +36,40 @@ export default function Senador() {
         const { Servico } = senador.Parlamentar.OutrasInformacoes;
 
         return (
-            <div>
-                Dados Basicos Parlamentar:
-                {DataFalecimento} - {DataNascimento}- {Naturalidade} - {UfNaturalidade}
-                IdentificacaoParlamentar:
-                {CodigoParlamentar} - {NomeCompletoParlamentar} - {NomeParlamentar} - {UrlFotoParlamentar} - {UrlPaginaParlamentar}
-                OutrasInformacoes:
-                <div className="servicos">
-                    {
-                        Servico.map((item, index) => (
-                            <div key={index} className="servico">
-                                <p>{item.NomeServico}</p>
-                                <p>{item.DescricaoServico}</p>
-                                <p>{item.UrlServico}</p>
-                            </div>
-                        ))
-                    }
+            <div className="Senador">
+                <h2>Senador</h2>
+                <div>
+                    <p><b>IdentificacaoParlamentar:</b></p>
+                    <p>{CodigoParlamentar} - {NomeParlamentar} </p>
+                    <p>Nome: {NomeCompletoParlamentar} </p>
+                    <img src={UrlFotoParlamentar} alt={NomeParlamentar} />
+                    <p><a href={UrlPaginaParlamentar}>Página</a></p>
                 </div>
-            </div>
+                <br /><br />
+                <div>
+                    <p><b>Dados Basicos Parlamentar:</b></p>
+                    <p>Falecimento: {DataFalecimento}</p>
+                    <p>Nascimento: {DataNascimento}</p>
+                    <p>Naturalidade: {Naturalidade} - {UfNaturalidade}</p>
+                </div>
+                <br /><br /><br />
+                <div>
+                    <b>Outras Informacoes:</b>
+                    <div className="servicos">
+                        {
+                            Servico.map((item, index) => (
+                                <div key={index} className="servico">
+                                    <p>Serviço: {item.NomeServico}</p>
+                                    <p>Descrição: {item.DescricaoServico}</p>
+                                    <p><a href={item.UrlServico}>Link</a></p>
+                                    <br /><br />
+                                </div>
+
+                            ))
+                        }
+                    </div>
+                </div>
+            </div >
         )
     }
 

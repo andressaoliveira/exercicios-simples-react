@@ -4,6 +4,7 @@ import Cargos from './Cargos';
 import Filiacoes from './Filiacoes';
 import Mandatos from './Mandatos';
 import Profissoes from './Profissoes';
+import Calculo from './Calculo';
 import Menu from './Menu/Menu';
 import './Principal.css'
 
@@ -14,6 +15,7 @@ export default function Principal() {
             <BrowserRouter>
                 <Menu />
                 <div className="display-prova">
+                    <Route path="/" exact component={Calculo} />
                     <Route path="/Senador" exact component={Senador} />
                     <Route path="/Cargos" component={Cargos} />
                     <Route path="/Filiacoes" component={Filiacoes} />

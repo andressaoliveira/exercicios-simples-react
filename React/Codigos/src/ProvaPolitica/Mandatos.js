@@ -6,7 +6,7 @@ export default function Mandatos() {
     const [mandatos, setMandatos] = useState(null);
 
     useEffect(() => {
-        api.get('/9/mandatos')
+        api.get('/120/mandatos')
             .then((response) => setMandatos(response.data.MandatoParlamentar))
             .catch((err) => {
                 console.error("ops! ocorreu um erro: " + err);
@@ -21,13 +21,15 @@ export default function Mandatos() {
 
         return (
             <div>
+                <h2>Mandatos</h2>
                 <div className="mandatos">
                     {
                         Mandato.map((item, index) => (
                             <div key={index} className="servico">
-                                <p>{item.DescricaoParticipacao}</p>
-                                <p>{item.CodigoMandato}</p>
-                                <p>{item.UfParlamentar}</p>
+                                <p>Paticipação: {item.DescricaoParticipacao}</p>
+                                <p>Codigo: {item.CodigoMandato}</p>
+                                <p>Estado: {item.UfParlamentar}</p>
+                                <br /><br />
                             </div>
                         ))
                     }

@@ -21,15 +21,15 @@ export default function Filiacoes() {
 
         return (
             <div>
+                <h2>Filiações</h2>
                 <div className="filiacoes">
                     {
                         Filiacao.map((item, index) => (
                             <div key={index} className="servico">
-                                <p>{item.DataFiliacao}</p>
-                                <p>{item.DataDesfiliacao}</p>
-                                <p>{item.Partido.NomePartido}</p>
-                                <p>{item.Partido.CodigoPartido}</p>
-                                <p>{item.Partido.SiglaPartido}</p>
+                                <p>Filiação: {item.DataFiliacao}</p>
+                                <p>Desfiliação: {item.DataDesfiliacao}</p>
+                                <p>Partido: {item.Partido.CodigoPartido} - {item.Partido.NomePartido} - {item.Partido.SiglaPartido}</p>
+                                <br /><br />
                             </div>
                         ))
                     }
