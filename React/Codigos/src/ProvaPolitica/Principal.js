@@ -6,7 +6,6 @@ import Mandatos from './Mandatos';
 import Profissoes from './Profissoes';
 import Calculo from './Calculo';
 import Menu from './Menu/Menu';
-import './Principal.css'
 
 export default function Principal() {
 
