@@ -4,13 +4,13 @@ import Lista01 from './Lista01/Lista01';
 import Lista02 from './Lista02/Lista02';
 import Menu from './Base/Menu'
 import ProvaViagem from './ProvaViagem/ProvaViagem';
-import ProvaFinal from './ProvaFinal/Principal';
 import ProvaHarryPotter from './ProvaHarryPotter/ProvaHarryPotter';
+import ProvaFinal from './ProvaFinal/Principal';
 
 const App = () => {
   return (
     <div className="App">
-       <BrowserRouter>
+      <BrowserRouter>
         <Menu />
         <Route path="/" exact component={Lista01} />
         <Route path="/Lista01" component={Lista01} />
@@ -18,7 +18,7 @@ const App = () => {
         <Route path="/ProvaViagem" component={ProvaViagem} />
         <Route path="/ProvaHarryPotter" component={ProvaHarryPotter} />
         <Route path="/ProvaFinal" component={ProvaFinal} />
-      </BrowserRouter> 
+      </BrowserRouter>
     </div>
   );
 }
