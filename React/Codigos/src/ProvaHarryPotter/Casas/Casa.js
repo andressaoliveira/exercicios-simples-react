@@ -1,6 +1,5 @@
 
 export default function Casa({personagens, casa}) {
-    console.log('trace', personagens)
 
     return (
         <div className="Casa">
