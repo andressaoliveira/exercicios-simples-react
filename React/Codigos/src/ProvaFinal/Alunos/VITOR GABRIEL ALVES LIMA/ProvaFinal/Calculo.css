@@ -1,0 +1,15 @@
+.calculo input {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.calculo p {
+  margin: 0px;
+  margin-bottom: 10px;
+}
+.calculo button {
+  margin-bottom: 10px;
+}
+.calculo {
+  text-align: center;
+}

@@ -1,0 +1,23 @@
+.menu {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(185, 185, 185);
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+  
+.menu a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #000;
+    display: block;
+}
+
+.menu a:hover {
+    color: #616161;
+}

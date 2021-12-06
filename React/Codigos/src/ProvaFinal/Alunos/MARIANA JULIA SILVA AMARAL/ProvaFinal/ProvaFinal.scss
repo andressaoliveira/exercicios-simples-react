@@ -1,0 +1,57 @@
+h2{
+    color: blueviolet;
+    text-align: center;
+}
+
+.rotas{
+    display: flex;
+}
+
+.menu{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    border-right: 2px solid rgb(113, 39, 182);
+    height: 100vh;
+}
+
+.menu h2{
+
+    color: blueviolet;
+}
+
+.menu a{
+    padding: 5px;
+}
+
+.calcular{
+    flex: 4;
+    text-align: center;
+}
+
+input{
+    margin: 10px;
+}
+
+button{
+
+    background-color: rgb(113, 39, 182);
+    border: 2px solid rgb(113, 39, 182);
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+    margin: 5px;
+    margin-top: 20px;
+    height: 30px;
+}
+
+.senador{
+    flex: 4;
+    text-align: center;
+}
+
+.filiacao{
+    flex: 4;
+    text-align: center;
+}

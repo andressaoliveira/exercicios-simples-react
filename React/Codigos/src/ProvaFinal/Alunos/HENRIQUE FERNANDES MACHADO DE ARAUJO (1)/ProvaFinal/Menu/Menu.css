@@ -1,0 +1,12 @@
+.Menu{
+    height: auto;
+    min-height: 100vh;
+    width: 200px;
+    border-right: 1px solid gray;
+    padding-left: 10px;
+}
+
+.Menu a{
+    display: block;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+aside{
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 200px;
+    height: 100vh;
+    border-right: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding-top: 10px;
+}
+
+aside > *{
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+aside > *:hover{
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.page{
+    width: calc(100vw - 200px);
+    height: 100vh;
+    top: 0;
+    right: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cargo{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
