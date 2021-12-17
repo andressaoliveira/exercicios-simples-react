@@ -1,0 +1,11 @@
+.divFlex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-9 {
+    flex: 9;
+}
