@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="prova" class="container">
+        Pontuação
+        <input size="2" id="pontos" value="15" />
+        <div id="devs" class="container">
+            <div id="dev1" class="devs">
+                <label>Dev1 </label>
+                <input size="2" id="dev1-valor" value="0" />
+                <button onclick="incrementar('dev1')">+</button>
+                <button onclick="decrementar('dev1')">-</button>
+            </div>
+
+            <div id="dev2" class="devs">
+                <label>Dev2 </label>
+                <input size="2" id="dev2-valor" value="0" />
+                <button onclick="incrementar('dev2')">+</button>
+                <button onclick="decrementar('dev2')">-</button>
+            </div>
+
+            <div id="dev3" class="devs">
+                <label>Dev3 </label>
+                <input size="2" id="dev3-valor" value="0" />
+                <button onclick="incrementar('dev3')">+</button>
+                <button onclick="decrementar('dev3')">-</button>
+            </div>
+        </div>
+        <button type="button" onclick="enviar()">Enviar</button>
+    </div>
+    <div id="resultado"></div>
+    <script src="script.js"> </script>
+</body>
+
+</html>

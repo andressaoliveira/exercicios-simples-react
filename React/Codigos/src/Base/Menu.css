@@ -1,0 +1,12 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    margin-right: 10px;
+    min-width: 180px;
+    border-right: 2px solid gray;
+}
+
+.App{
+    display: flex;
+}
