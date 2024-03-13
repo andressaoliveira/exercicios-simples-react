@@ -1,4 +1,4 @@
-# Atividades Avaliativas (Cotemig)
+# Exercícios Simples (React)
 
 Repositório que armazena as atividades que foram passadas para alunos do Cotemig.
 
