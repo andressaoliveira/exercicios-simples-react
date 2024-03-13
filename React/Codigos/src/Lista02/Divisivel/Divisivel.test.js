@@ -1,4 +1,4 @@
-import { calcularDivisivel } from "./Calculo";
+import { calcularDivisivel } from "./Divisivel";
 
 describe("Calcular", () => {
     it("calcula valores divisiveis", () => {

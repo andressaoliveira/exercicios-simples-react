@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
-import Button from '../../Base/Button';
-import Input from '../../Base/Input';
+
+export const calcularDivisivel = (num1, num2) => {
+    const resto = num1 % num2;
+    if (resto === 0)
+        return true
+    else
+        return false
+};
 
 export default function Divisivel() {
     const [num1, setNum1] = useState(0);
@@ -8,23 +14,17 @@ export default function Divisivel() {
     const [ehDivisivel, setEhDivisivel] = useState(null);
     const [mostrar, setMostrar] = useState(false);
 
-    const calcular = () => {
-        const resto = num1 % num2;
-        if (resto === 0)
-            setEhDivisivel(true)
-        else
-            setEhDivisivel(false)
-        setMostrar(true)
-    };
 
     return (
         <div>
             <h2>Divisivel</h2>
             <div>
-                Primeiro número:<Input onChange={(e) => { setNum1(e.target.value); setMostrar(false) }} />
-                Segundo número: <Input onChange={(e) => { setNum2(e.target.value); setMostrar(false) }} />
+                <p>Primeiro número: <input onChange={(e) => { setNum1(e.target.value); setMostrar(false) }} /></p>
+                <p>Segundo número: <input onChange={(e) => { setNum2(e.target.value); setMostrar(false) }} /></p>
             </div>
-            <Button onClick={() => calcular()}>Calcular</Button>
+            <button onClick={() => { setEhDivisivel(calcularDivisivel(num1, num2)); setMostrar(true) }}>
+                Calcular
+            </button>
 
             {mostrar ? <p>{`${num1} ${ehDivisivel ? 'é' : 'não é'} divisível por ${num2}`}</p> : null}
 
