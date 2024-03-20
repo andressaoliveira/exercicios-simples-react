@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/exercicios-simples-react/static/css/main.500bb12b.css",
-    "main.js": "/exercicios-simples-react/static/js/main.2f4d162c.js",
-    "static/js/453.2a82e7ac.chunk.js": "/exercicios-simples-react/static/js/453.2a82e7ac.chunk.js",
+    "main.js": "/exercicios-simples-react/static/js/main.abf96bfd.js",
+    "static/js/488.d3342b1c.chunk.js": "/exercicios-simples-react/static/js/488.d3342b1c.chunk.js",
     "index.html": "/exercicios-simples-react/index.html",
     "main.500bb12b.css.map": "/exercicios-simples-react/static/css/main.500bb12b.css.map",
-    "main.2f4d162c.js.map": "/exercicios-simples-react/static/js/main.2f4d162c.js.map",
-    "453.2a82e7ac.chunk.js.map": "/exercicios-simples-react/static/js/453.2a82e7ac.chunk.js.map"
+    "main.abf96bfd.js.map": "/exercicios-simples-react/static/js/main.abf96bfd.js.map",
+    "488.d3342b1c.chunk.js.map": "/exercicios-simples-react/static/js/488.d3342b1c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.500bb12b.css",
-    "static/js/main.2f4d162c.js"
+    "static/js/main.abf96bfd.js"
   ]
 }
